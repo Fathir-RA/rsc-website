@@ -227,20 +227,19 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 1.8rem; /* **DIKECILKAN LAGI** (dari 2rem) agar tidak terpotong */
+        /* Ukuran diperkecil lagi agar pasti tidak terpotong (misal 1.5rem) */
+        font-size: 1.5rem; 
         line-height: 1.2;
         margin-bottom: 5px;
     }
     
     .hero-content .tagline {
-        font-size: 0.9rem; /* Ukuran subtitle yang proporsional */
-        margin: 5px auto 0;
+        font-size: 0.8rem; /* Ukuran subtitle yang sangat kecil */
     }
     
-    /* Tombol Navigasi Slider di Mobile */
+    /* 1. SEMBUNYIKAN TOMBOL SLIDER di HP */
     .slider-nav {
-        font-size: 1.2rem;
-        padding: 8px;
+        display: none; 
     }
     .prev-slide { left: 10px; }
     .next-slide { right: 10px; }
