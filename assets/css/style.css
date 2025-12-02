@@ -241,8 +241,6 @@ body {
     .slider-nav {
         display: none; 
     }
-    .prev-slide { left: 10px; }
-    .next-slide { right: 10px; }
 }
 
 /* --- 5. Content Sections (Gaya Warna-Warni) --- */
@@ -692,3 +690,4 @@ body {
         border-bottom: none;
     }
 }
+
