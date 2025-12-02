@@ -19,29 +19,35 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ===================================================
-    // 2. SMOOTH SCROLLING & MENU CLOSE
+    // 2. SMOOTH SCROLLING & MENU CLOSE (REVISI PERBAIKAN BUG)
     // ===================================================
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             
-            // Pastikan link memiliki hash (#)
             if (this.hash !== "") {
-                e.preventDefault(); // Mencegah lompatan standar
+                e.preventDefault(); 
                 
                 const targetId = this.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
-
+                const mainHeader = document.querySelector('.main-header');
+                
+                // --- PERBAIKAN BUG SCROLLING UTAMA ---
+                // Kita ambil tinggi header saat ini (sekitar 60px di desktop/mobile)
+                // Tambahkan 5px sebagai margin ekstra agar konten tidak menempel ke header.
+                const headerHeight = mainHeader.offsetHeight + 5; 
+                
                 if (targetElement) {
-                    // Hitung posisi scroll dengan mempertimbangkan tinggi header sticky
-                    const headerHeight = mainNav.offsetHeight; 
                     
+                    // Gunakan scrollIntoView dengan opsi 'start' dan offset top yang dikurangi tinggi header
+                    // Catatan: scrollIntoView tidak mendukung offset, jadi kita pakai window.scrollTo
                     window.scrollTo({
+                        // Scroll ke posisi elemen dikurangi tinggi header
                         top: targetElement.offsetTop - headerHeight, 
                         behavior: 'smooth'
                     });
                 }
 
-                // Tutup menu mobile setelah klik (untuk pengalaman pengguna yang lebih baik)
+                // Tutup menu mobile setelah klik 
                 if (mainNav.classList.contains('active')) {
                     mainNav.classList.remove('active');
                     menuToggle.setAttribute('aria-expanded', 'false');
@@ -114,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function startTimer() {
-        slideInterval = setInterval(nextSlide, 5000); // Ganti setiap 5 detik
+        slideInterval = setInterval(nextSlide, 3000); // Ganti setiap 3 detik
     }
 
     function resetTimer() {
