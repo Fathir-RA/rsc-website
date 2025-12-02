@@ -211,24 +211,39 @@ body {
 /* Responsif Mobile untuk Hero */
 @media (max-width: 768px) {
     .hero-section {
-        height: 60vh;
+        height: 60vh; /* TInggi tetap sama */
+    }
+    
+    .hero-slide {
+        /* Memastikan konten di tengah dan ada padding horizontal */
+        padding: 0 20px; 
     }
     
     .hero-content {
-        /* Wajib: Memberikan ruang (padding) agar teks tidak mentok ke samping */
-        padding: 0 15px; 
+        /* Konten Hero di Mobile */
+        padding: 0; /* Padding sudah dihandle oleh .hero-slide */
+        text-align: center; /* PENTING: Memastikan teks rata tengah */
+        width: 100%;
     }
 
     .hero-content h1 {
-        font-size: 2rem; /* Diperkecil dari 2.5rem, agar tidak terlalu besar */
-        line-height: 1.1;
+        font-size: 1.8rem; /* **DIKECILKAN LAGI** (dari 2rem) agar tidak terpotong */
+        line-height: 1.2;
+        margin-bottom: 5px;
     }
     
     .hero-content .tagline {
-        font-size: 0.9rem; /* Diperkecil agar proporsional */
-        max-width: 100%;
-        margin: 10px auto 10px;
+        font-size: 0.9rem; /* Ukuran subtitle yang proporsional */
+        margin: 5px auto 0;
     }
+    
+    /* Tombol Navigasi Slider di Mobile */
+    .slider-nav {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+    .prev-slide { left: 10px; }
+    .next-slide { right: 10px; }
 }
 
 /* --- 5. Content Sections (Gaya Warna-Warni) --- */
@@ -391,6 +406,7 @@ body {
     .main-header .container {
         flex-direction: column; /* Header jadi tumpuk: Logo-Nav-CTA */
         text-align: center;
+        padding: 15px; /* Tambahkan padding agar ada ruang di kiri/kanan */
         gap: 10px;
     }
     .main-nav ul {
