@@ -1,8 +1,8 @@
 /* --- 1. Reset Dasar & Font (TIDAK BERUBAH) --- */
-* {
+* * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Wajib ada di * (reset dasar) */
     transition: 0.3s ease-in-out;
 }
 
@@ -127,8 +127,9 @@ body {
     /* Gaya Konten di Tengah */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     position: relative;
+    text-align: center;
 }
 
 /* Hapus kelas .active dari .hero-slide karena sekarang dihandle oleh transform */
@@ -210,16 +211,23 @@ body {
 /* Responsif Mobile untuk Hero */
 @media (max-width: 768px) {
     .hero-section {
-        height: 60vh; /* Lebih pendek di HP */
+        height: 60vh;
     }
+    
+    .hero-content {
+        /* Wajib: Memberikan ruang (padding) agar teks tidak mentok ke samping */
+        padding: 0 15px; 
+    }
+
     .hero-content h1 {
-        font-size: 2rem; /* Ukuran h1 di mobile */
+        font-size: 2rem; /* Diperkecil dari 2.5rem, agar tidak terlalu besar */
+        line-height: 1.1;
     }
+    
     .hero-content .tagline {
-        font-size: 1rem; /* Ukuran p di mobile */
-    }
-    .slider-nav {
-        font-size: 1.5rem;
+        font-size: 0.9rem; /* Diperkecil agar proporsional */
+        max-width: 100%;
+        margin: 10px auto 10px;
     }
 }
 
