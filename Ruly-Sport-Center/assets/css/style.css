@@ -94,43 +94,133 @@ body {
     left: 0;
 }
 
-/* --- 4. Hero Section --- */
+/* --- 4. Hero Section (Revisi untuk Efek SLIDE) --- */
 .hero-section {
-    height: 90vh; /* Lebih tinggi di desktop */
-    background-size: cover;
-    background-position: center;
+    position: relative; 
+    height: 80vh; 
+    overflow: hidden;
+    /* Ubah ini dari display: block menjadi flex */
     display: flex;
-    align-items: center; /* Konten di tengah vertikal */
-    position: relative;
-    text-align: center;
+    align-items: center; /* Untuk memposisikan .hero-slider-inner di tengah vertikal jika diperlukan */
 }
 
-.hero-section::before {
+/* Container untuk semua slide - Wajib menggunakan lebar berlebihan */
+.hero-slider-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Wajib: agar menutupi seluruh hero section */
+    top: 0;
+    left: 0;
+    
+    /* Tambahkan Flexbox dan Transisi */
+    display: flex;
+    transition: transform 1s ease-in-out; /* TRANSISI GESER di sini! */
+}
+
+/* Setiap Slide Item */
+.hero-slide {
+    min-width: 100%; /* Setiap slide mengambil 100% lebar container */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    
+    /* Gaya Konten di Tengah */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Hapus kelas .active dari .hero-slide karena sekarang dihandle oleh transform */
+
+.hero-slide::before {
+    /* ... (Biarkan kode overlay rgba(0, 0, 0, 0.4) tetap sama) ... */
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Efek gelap */
+    background: rgba(0, 0, 0, 0.4); 
 }
 
+/* Biarkan .hero-content dan slider-nav/dots lainnya tetap sama */
+
 .hero-content {
+    /* Gaya Konten */
     position: relative;
     z-index: 10;
     color: white;
 }
 
 .hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 15px;
+    font-size: 3rem; /* Diperkecil dari 4rem */
+    margin-bottom: 10px;
     font-weight: 700;
 }
 
 .hero-content .tagline {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Diperkecil dari 1.5rem */
     max-width: 600px;
-    margin: 0 auto 30px;
+    margin: 0 auto 10px;
+}
+
+/* Gaya Tombol Navigasi Slider */
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 20;
+    transition: background 0.3s;
+}
+.slider-nav:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+.prev-slide { left: 20px; border-radius: 50%; }
+.next-slide { right: 20px; border-radius: 50%; }
+
+/* Gaya Indikator Dots */
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    display: flex;
+    gap: 8px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.dot.active {
+    background: white;
+}
+
+/* Responsif Mobile untuk Hero */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh; /* Lebih pendek di HP */
+    }
+    .hero-content h1 {
+        font-size: 2rem; /* Ukuran h1 di mobile */
+    }
+    .hero-content .tagline {
+        font-size: 1rem; /* Ukuran p di mobile */
+    }
+    .slider-nav {
+        font-size: 1.5rem;
+    }
 }
 
 /* --- 5. Content Sections (Gaya Warna-Warni) --- */
