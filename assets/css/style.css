@@ -62,9 +62,32 @@ body {
 }
 
 .logo {
-    font-size: 1.8rem;
-    color: #1E3A8A; /* Biru Utama */
+    display: flex; 
+    align-items: center; 
+    /* DIKECILKAN SEDIKIT DARI 1.8rem agar lebih proporsional */
+    font-size: 1.6rem; 
+    color: #1E3A8A; 
     font-weight: 700;
+}
+
+.header-logo {
+    /* TINGGI LOGO: Dibuat sama dengan tinggi baris teks (sekitar 1.2x font size) */
+    height: 1.2em; 
+    
+    width: auto;
+    margin-right: 10px; 
+    object-fit: contain;
+}
+
+/* Penyesuaian Logo di Mobile */
+@media (max-width: 768px) {
+    .header-logo {
+        height: 1.2em; /* Menggunakan em agar mengikuti font size baru */
+        margin-right: 8px;
+    }
+    .logo {
+        font-size: 1.3rem; /* DIKECILKAN LAGI agar lebih proporsional di HP */
+    }
 }
 
 .main-nav ul {
@@ -102,6 +125,8 @@ body {
     /* Ubah ini dari display: block menjadi flex */
     display: flex;
     align-items: center; /* Untuk memposisikan .hero-slider-inner di tengah vertikal jika diperlukan */
+    background-size: cover; 
+    background-position: center center;
 }
 
 /* Container untuk semua slide - Wajib menggunakan lebar berlebihan */
@@ -211,36 +236,30 @@ body {
 /* Responsif Mobile untuk Hero */
 @media (max-width: 768px) {
     .hero-section {
-        height: 60vh; /* TInggi tetap sama */
+        height: 45vh; /* DIKECILKAN: Agar Hero terlihat lebih LANDSCAPE (horizontal) */
     }
     
     .hero-slide {
-        /* Memastikan konten di tengah dan ada padding horizontal */
-        padding: 0 20px; 
+        /* PENTING: Untuk mengatasi gambar portrait di HP */
+        background-position: center bottom; /* Fokuskan pada bagian bawah gambar (air) */
+        padding: 0 10px; /* Padding lebih kecil */ 
     }
     
-    .hero-content {
-        /* Konten Hero di Mobile */
-        padding: 0; /* Padding sudah dihandle oleh .hero-slide */
-        text-align: center; /* PENTING: Memastikan teks rata tengah */
-        width: 100%;
-    }
-
     .hero-content h1 {
-        /* Ukuran diperkecil lagi agar pasti tidak terpotong (misal 1.5rem) */
-        font-size: 1.5rem; 
-        line-height: 1.2;
-        margin-bottom: 5px;
+        font-size: 1.4rem; /* DIKECILKAN LAGI: Agar tidak menutupi gambar */
+        line-height: 1.1;
     }
     
     .hero-content .tagline {
-        font-size: 0.8rem; /* Ukuran subtitle yang sangat kecil */
+        font-size: 0.8rem; /* Sangat kecil */
     }
     
-    /* 1. SEMBUNYIKAN TOMBOL SLIDER di HP */
+    /* Tombol Navigasi Slider di Mobile (Opsional) */
     .slider-nav {
         display: none; 
     }
+    .prev-slide { left: 10px; }
+    .next-slide { right: 10px; }
 }
 
 /* --- 5. Content Sections (Gaya Warna-Warni) --- */
@@ -690,4 +709,3 @@ body {
         border-bottom: none;
     }
 }
-
