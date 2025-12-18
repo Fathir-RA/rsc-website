@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 3. HERO SECTION SLIDER
     // ===================================================
     const sliderInner = document.querySelector('.hero-slider-inner');
-    const slides = document.querySelectorAll('.hero-slide');
+    const slides = sliderInner ? sliderInner.querySelectorAll('.hero-slide') : [];
     const prevBtn = document.querySelector('.prev-slide');
     const nextBtn = document.querySelector('.next-slide');
     const dotsContainer = document.querySelector('.slider-dots');
@@ -143,4 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
         initializeSlider();
     }
 
+    // Wave visuals removed — no wave JS remains
+
 });
+
