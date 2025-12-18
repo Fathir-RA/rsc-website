@@ -47,7 +47,7 @@ body {
 
 /* --- 3. Header & Navigasi (RESPONSIF) --- */
 .main-header {
-    background-color: white;
+
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -93,7 +93,10 @@ body {
 .main-nav ul {
     list-style: none;
     display: flex;
+
 }
+
+
 
 .main-nav ul li a {
     text-decoration: none;
@@ -101,10 +104,11 @@ body {
     padding: 10px 15px;
     font-weight: 500;
     position: relative;
+
 }
 
 .main-nav ul li a:hover {
-    color: #1E3A8A;
+
 }
 
 .main-nav ul li a:hover::after {
@@ -278,6 +282,8 @@ body {
     background-color: #EBF8FF; /* Biru Muda Pucat */
 }
 
+
+
 .section-white {
     background-color: white;
 }
@@ -287,6 +293,7 @@ body {
 }
 
 /* --- 5a. Intro Stats (Bagian III) --- */
+
 .intro-text {
     font-size: 1.15rem;
     max-width: 800px;
@@ -319,6 +326,46 @@ body {
     font-weight: 600;
     color: #1E3A8A;
 }
+
+/* Wave splash image (animated left-right, overlay at bottom) */
+/* Make #intro slightly tighter at the bottom so wave overlap is reduced */
+#intro { position: relative; z-index: 1; overflow: visible; padding-bottom: 10px; } /* create stacking context so child with negative z sits behind content */
+.wave-splash-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2px; /* further reduced overlap */
+    width: 120%;
+    max-width: 1200px;
+    pointer-events: none;
+    overflow: visible;
+    z-index: -1; /* behind section content */
+    display: flex;
+    justify-content: center;
+}
+.wave-splash {
+    display: block;
+    width: 60%;
+    max-width: 900px;
+    margin: 0;
+    opacity: 0.95;
+    transform-origin: center;
+    /* continuous left-to-right motion with ease-in-out */
+    animation: slide-x 9s ease-in-out infinite;
+    will-change: transform;
+}
+@keyframes slide-x {
+    0% { transform: translateX(-40%); }
+    100% { transform: translateX(140%); }
+}
+
+/* Make sure small screens keep it subtle */
+@media (max-width: 576px) {
+    .wave-splash-wrapper { max-width: 480px; bottom: -6px; }
+    .wave-splash { width: 300px; }
+}
+
+/* --- 5b. Pool Detail Cards (Bagian IV) --- */
 
 /* --- 5b. Pool Detail Cards (Bagian IV) --- */
 .pool-detail-card {
@@ -497,10 +544,21 @@ body {
 }
 
 /* --- 5d. Sports Section (Mini Soccer & Gym - Bagian VI) --- */
+        .section-dark-blue {
+        /* Provide a big circle size by default; clamped by viewport width elsewhere */
+        --menu-size: 1000px;
+        --menu-border: rgba(255, 255, 255, 0.12);
+        background-color: #1E3A8A; /* Biru Utama */
+        padding: 100px 0;
+}
 
-.section-dark-blue {
-    background-color: #1E3A8A; /* Biru Utama */
-    padding: 100px 0;
+/* Keep container content centered within the dark section so the circle sits in the middle */
+.section-dark-blue .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
 
 /* Mengubah warna teks di card detail agar terbaca di latar belakang gelap */
@@ -524,6 +582,7 @@ body {
         grid-template-columns: 1fr; /* 1 kolom di mobile */
     }
 }
+
 
 /* --- 5e. Gallery Section (Bagian VII) --- */
 .gallery-grid {
@@ -612,6 +671,59 @@ body {
 
 .map-cta {
     margin-top: 20px;
+}
+
+/* --- Instagram Embed Section (centered square card) --- */
+.instagram-embed {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically if extra height */
+    padding: 20px 0; /* spacing above/below */
+}
+.instagram-embed .ratio {
+    width: 100%;
+    max-width: 760px; /* wider card for desktop */
+    min-height: 240px; /* taller card */
+    height: auto; /* let content determine the height */
+    border-radius: 16px; /* round the outer box */
+    overflow: hidden; /* clip inner content to rounded corners */
+    padding-top: 0 !important; /* override Bootstrap ratio padding */
+}
+
+@media (max-width: 768px) {
+    .instagram-embed .ratio {
+        max-width: 360px; /* slightly smaller on mobile */
+        min-height: 220px;
+    }
+}
+
+/* Instagram card mock styles */
+.instagram-card-wrapper { padding: 8px; }
+.instagram-card-wrapper { padding: 8px; border-radius: 16px; }
+.instagram-card { background: white; padding: 14px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 6px 20px rgba(2,6,23,0.08); border-radius: 12px; border: 1px solid rgba(0,0,0,0.04); }
+.instagram-card-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.instagram-card-header .insta-left { display:flex; gap: 12px; align-items: center; }
+.insta-avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.12); }
+.insta-info { display:flex; flex-direction: column; gap: 2px; }
+.insta-username { font-weight: 700; color: #111827; text-decoration: none; }
+.insta-sub { color: #6b7280; font-size: 0.9rem; }
+.insta-right .insta-follow { color: white; background: linear-gradient(45deg,#F58529 0%, #DD2A7B 50%, #8134AF 100%); padding: 6px 8px; border-radius: 8px; text-decoration: none; font-size: 1.1rem; display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; }
+
+.instagram-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; width: 100%; }
+.instagram-grid .insta-thumb { display:block; width:100%; overflow:hidden; border-radius: 4px; aspect-ratio: 1/1; }
+.instagram-grid .insta-thumb img { width:100%; height:100%; object-fit: cover; display:block; }
+
+/* Make sure the grid squares keep 1:1 aspect ratio */
+.instagram-grid { grid-auto-rows: 1fr; }
+
+/* Hover effect */
+.instagram-grid .insta-thumb:hover img { transform: scale(1.05); transition: transform 0.25s ease; }
+
+@media (max-width: 768px) {
+    .instagram-card { padding: 12px; }
+    .insta-avatar { width: 48px; height: 48px; }
+    .instagram-grid { gap: 4px; }
+    .instagram-embed .ratio { max-width: 360px; min-height: 220px; }
 }
 
 /* --- RESPONSIF (Tambahan untuk Contact & Gallery) --- */
@@ -709,3 +821,62 @@ body {
         border-bottom: none;
     }
 }
+
+/* Hero Header */
+.hero-header {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 80px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding-left: 50px;
+    color: white;
+}
+
+
+
+
+/* Section Padding */
+.section-padding {
+    padding: 80px 0;
+}
+
+/* Floating WhatsApp Button */
+.btn-floating-wa {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 5px 25px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-floating-wa:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+    color: white;
+}
+    
