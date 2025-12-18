@@ -1,39 +1,54 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSC Swimming Pool - Kolam Renang dan Olahraga Terbaik</title>
-    
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/logos/rsc-favicon.ico" type="image/x-icon">
-</head>
-<body>
-
-    <header class="main-header">
+   </head>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
+ <body>
+    <header class="main-header bg-opacity-7 rounded-circle">
     <div class="container">
-        <h1 class="logo">
-            <img src="assets/images/RSC-logo.svg" alt="Logo RSC" class="header-logo">
+        <h1 class="logo text-info">
             RSC Swimming Pool
         </h1>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#pools">Kolam</a></li>
-                <li><a href="#amenities">Fasilitas</a></li>
-                <li><a href="#sports">Olahraga</a></li>
-                <li><a href="#gallery">Galeri</a></li> <li><a href="#contact">Kontak</a></li>
-            </ul>
+        <nav class="main-nav nav-item text-light">
+            <ul class="nav nav-pills">
+                <li><a class="btn btn-outline-primary text-info m-2" aria-current="page"  href="#pools">Kolam</a></li>
+                <li><a class="btn btn-outline-primary text-info m-2" aria-current="page" href="#amenities">Fasilitas</a></li>
+                <li><a class="btn btn-outline-primary text-info m-2" href="#sports">Olahraga</a></a></li>
+                <li><a class="btn btn-outline-primary text-info m-2" href="#gallery">Galeri</a></a></li>
+        </ul>
         </nav>
-        <a href="https://wa.me/62811xxxxxx" class="cta-button desktop-only">Pesan Tiket</a>
         
-        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
-            <i class="bi bi-list"></i>
-        </button>
     </div>
     </header>
 
+    <!-- CTA FLOATING -->
+     <div class="">
+    <a href="https://wa.me/628111239933" class="btn-floating-wa d-flex align-items-center justify-content-center gap-2 fw-semibold" target="_blank">
+        <span class="d-none d-md-inline">Pesan Tiket Sekarang!!</span>
+        <i class="bi bi-whatsapp fs-5"></i>
+    </a>
+    </div>
+
+    <div class="hero-header" style="background-image: url('assets/images/HeroSection1.webp');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="display-1 text-center">Welcome at Ruly Sport Center</p>
+            <p class="text-center display-">Satu Tempat, Banyak Cerita</p>
+
+        </div>
+    </div>
+    
     <section id="home" class="hero-section">
         <div class="hero-slider-inner">
             <div class="hero-slide active" style="background-image: url('assets/images/HeroSection1.webp');">
@@ -64,9 +79,9 @@
         <div class="slider-dots"></div>
     </section>
 
-    <section id="intro" class="section-content section-light-blue">
+     <section id="intro" class="section-content section-light-blue">
         <div class="container text-center">
-            <h2 class="section-title">Nikmati Pengalaman Berenang Terbaik di RSC</h2>
+            <h1 class=" display-3">Nikmati Pengalaman Berenang Terbaik di RSC</h1>
             <p class="intro-text">RSC Swimming Pool hadir sebagai oase rekreasi air untuk seluruh keluarga. Dengan air yang terawat higienis setiap hari, kami menyediakan lingkungan yang aman dan menyenangkan, baik untuk belajar, berlatih, maupun bersantai.</p>
             <div class="intro-stats">
                 <div class="stat-item">
@@ -85,8 +100,16 @@
                     <p>Fasilitas lengkap untuk balita hingga dewasa.</p>
                 </div>
             </div>
+  <!-- Decorative water splash SVG (subtle, animated) -->
+            <div class="water-splash-wrapper" aria-hidden="true">
+                <img src="assets/images/wave-splash.png" alt="" class="wave-splash" />
+            </div>
         </div>
+       
     </section>
+     
+
+
 
     <section id="pools" class="section-content section-white">
         <div class="container">
@@ -144,39 +167,49 @@
         </div>
     </section>
 
-    <section id="amenities" class="section-content section-light-blue">
+     <section id="amenities" class="section-content section-light-blue">
         <div class="container text-center">
-            <h2 class="section-title">Fasilitas Pendukung Kolam</h2>
+            <div class="col" data-aos="fade-down">
+                <h2 class="section-title" >Fasilitas Pendukung Kolam</h2>
             <p class="intro-text mb-5">Kami menyediakan fasilitas lengkap untuk kenyamanan berenang dan bersantai Anda, mulai dari tempat istirahat hingga penyewaan alat.</p>
-            
+            </div>
+        
             <div class="amenities-grid">
-                <div class="amenity-card">
-                    <img src="assets/images/amenity_gazebo.webp" alt="Gazebo Sewa" class="amenity-image">
-                    <h4>Gazebo Keluarga (Area Bersantai)</h4>
-                    <p>Tersedia lebih dari 20 gazebo eksklusif dengan sistem sewa harian. Sempurna untuk makan siang atau istirahat keluarga.</p>
-                    <a href="#" class="small-cta">Cek Ketersediaan</a>
-                </div>
-                
-                <div class="amenity-card">
-                    <img src="assets/images/amenity_locker.webp" alt="Kamar Bilas Bersih" class="amenity-image">
-                    <h4>Kamar Ganti & Loker Bersih</h4>
-                    <p>Kamar bilas yang luas, bersih, dan higienis. Loker penyimpanan aman tersedia dengan sistem kunci digital.</p>
-                    <a href="#" class="small-cta">Lihat Denah</a>
-                </div>
-
-                <div class="amenity-card">
-                    <img src="assets/images/amenity_gear.webp" alt="Pelampung dan Kaca Mata" class="amenity-image">
-                    <h4>Penyewaan Alat Renang</h4>
-                    <p>Tidak perlu repot membawa. Tersedia sewa pelampung, kacamata, ban renang, dan papan seluncur untuk anak-anak.</p>
-                    <a href="#" class="small-cta">Cek Harga Sewa</a>
+                <div class="row justify-content-center fs-5 text-center">
+                    <div class="col-md-4" data-aos="fade-right">
+                            <div class="amenity-card">
+                                <img src="assets/images/amenity_gazebo.webp" alt="Gazebo Sewa" class="amenity-image">
+                                <h4>Gazebo Keluarga (Area Bersantai)</h4>
+                                <p>Tersedia lebih dari 20 gazebo eksklusif dengan sistem sewa harian. Sempurna untuk makan siang atau istirahat keluarga.</p>
+                                <a href="#" class="small-cta">Cek Ketersediaan</a>
+                            </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-right">
+                            <div class="amenity-card">
+                                <img src="assets/images/amenity_locker.webp" alt="Kamar Bilas Bersih" class="amenity-image">
+                                <h4>Kamar Ganti & Loker Bersih</h4>
+                                <p>Kamar bilas yang luas, bersih, dan higienis. Loker penyimpanan aman tersedia dengan sistem kunci digital.</p>
+                                <a href="#" class="small-cta">Lihat Denah</a>
+                            </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-left">
+                            <div class="amenity-card">
+                                <img src="assets/images/amenity_gear.webp" alt="Pelampung dan Kaca Mata" class="amenity-image">
+                                <h4>Penyewaan Alat Renang</h4>
+                                <p>Tidak perlu repot membawa. Tersedia sewa pelampung, kacamata, ban renang, dan papan seluncur untuk anak-anak.</p>
+                                <a href="#" class="small-cta">Cek Harga Sewa</a>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="sports" class="section-content section-dark-blue">
+    
+
+        <section id="sports" class="section-content section-dark-blue">
         <div class="container">
-            <h2 class="section-title text-white">Fasilitas Olahraga Non-Kolam</h2>
+            <h2 class="section-title text-white" data-aos="fade-up" data-aos-duration="1000">Fasilitas Olahraga Non-Kolam</h2>
 
             <div class="pool-detail-card section-white-text">
                 <img src="assets/images/sport_soccer.webp" alt="Mini Soccer RSC" class="pool-image">
@@ -205,8 +238,8 @@
             </div>
         </div>
     </section>
-    
-    <section id="gallery" class="section-content section-white">
+
+        <section id="gallery" class="section-content section-white">
         <div class="container text-center">
             <h2 class="section-title text-dark">Galeri Foto Eksklusif RSC</h2>
             <p class="intro-text mb-5">Jelajahi momen-momen terbaik dan keindahan RSC Swimming Pool dari berbagai sudut. Klik untuk melihat detail.</p>
@@ -236,6 +269,21 @@
         </div>
     </section>
 
+    <!-- INSTAGRAM SECTION -->
+    <section id="instagram" class="section-content section-white">
+        
+        <div class="container instagram-embed rounded-4">
+            <marquee behavior="" direction="" scrollamount="25"><h1 class="display-3">Jangan Ketinggalan Promo dan  Event Terbaru!!</h1></marquee>
+            <div class="ratio ratio-1x1 rounded-4 overflow-hidden shadow instagram-card-wrapper">
+                <div class="instagram-card">
+                <iframe src="https://www.instagram.com/rsc_soccerpurwakarta/embed" frameborder="0" allowtransparency="true" allowfullscreen="" scrolling="no" style="border:none; width:100%; height: 700px;">
+                  </iframe>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="section-content section-light-blue">
         <div class="container">
             <h2 class="section-title">Hubungi Kami & Temukan Lokasi</h2>
@@ -261,11 +309,10 @@
                 </div>
 
                 <div class="google-map">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1013454!2d107.000!3d-6.000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zU0VSS09SWSwgQnVsYW4gdGFubWFsbA!5e0!3m2!1sid!2sid!4v1678822557404" 
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                    <a href="[Link Google Maps Ruly SC Anda]" target="_blank" class="cta-button map-cta">Buka di Google Maps</a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.7629376509984!2d107.4727405!3d-6.4954557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690dd5ec4e0533%3A0xb36c071287547cde!2sRuly%20Sport%20Center!5e0!3m2!1sid!2sid!4v1765361496372!5m2!1sid!2sid"
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                    <a href="https://maps.app.goo.gl/RCyXoik2Dp8HWxF47" target="_blank" class="cta-button map-cta">Buka di Google Maps</a>
                 </div>
             </div>
         </div>
@@ -274,8 +321,54 @@
     <footer id="footer" class="main-footer">
         ...
     </footer>
-    
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
 
+  </body>
+  <script src="assets/js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.from('.img-thumbnail', { duration: 2, rotationX: 360 });
+      gsap.from('.navbar', { duration: 1.5, opacity: 0, y: '-100%', ease: 'bounce' });
+      gsap.from('.display-4', { delay: 1, duration: 1, opacity: 0, x: '-10%' });
+
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', { delay: 1.5, duration: 2, text: 'Lecturer | Content Creator' });
+
+      const galleryImages = document.querySelectorAll('.gallery-img');
+      const delayTimes = [0, 50, 100, 150, 200, 250, 300, 350, 400, 450];
+
+      function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
+        }
+        return array;
+      }
+      const newDelay = shuffleArray(delayTimes);
+      galleryImages.forEach((img, i) => {
+        img.dataset.aos = 'fade-up';
+        img.dataset.aosDelay = i * 50 + '';
+        // img.dataset.aosDelay = newDelay[i];
+      });
+
+      AOS.init({
+        once: true,
+        duration: 3000,
+      });
+    </script>
+    
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll('.keyboard-box'), {
+        max: 35,
+        speed: 1000,
+        glare: true,
+      });
+      </script>
+</html>
