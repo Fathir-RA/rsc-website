@@ -372,29 +372,63 @@ section {
 }
 
 /* =========================================
-   12. MOBILE RESPONSIVE (UPDATE FINAL)
+   12. MOBILE RESPONSIVE (UPDATE FINAL - LANDSCAPE HERO)
    ========================================= */
 @media (max-width: 768px) {
     
-    /* 1. HILANGKAN TOMBOL PANAH KIRI/KANAN DI HP */
+    /* --- 1. UBAH HERO JADI LANDSCAPE (MELEBAR) --- */
+    .carousel-item {
+        /* Matikan paksaan tinggi layar penuh */
+        height: auto !important; 
+        min-height: unset !important;
+
+        /* Atur rasio gambar agar melebar (Landscape) */
+        /* Angka 4/3 membuat gambar terlihat utuh & kotak persegi panjang */
+        aspect-ratio: 4 / 3; 
+        
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* --- 2. PENYESUAIAN TEKS DI GAMBAR PENDEK --- */
+    .hero-caption-centered {
+        padding: 15px;
+        justify-content: center; /* Teks di tengah */
+    }
+
+    /* Perkecil Judul agar muat */
+    .hero-caption-centered h1 { 
+        font-size: 1.6rem !important; 
+        margin-bottom: 5px;
+        text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+    }
+    
+    /* Perkecil Badge lokasi */
+    .hero-caption-centered .badge {
+         font-size: 0.7rem !important;
+         padding: 0.3em 0.8em !important;
+         margin-bottom: 5px !important;
+    }
+
+    /* SEMBUNYIKAN Deskripsi paragraf agar gambar bersih */
+    .hero-caption-centered p.d-none.d-md-block {
+         display: none !important;
+    }
+
+    /* --- 3. HILANGKAN TOMBOL PANAH KIRI/KANAN --- */
     .carousel-control-prev, 
     .carousel-control-next {
         display: none !important;
     }
 
-    /* 2. PERKECIL UKURAN JUDUL HERO UTAMA */
-    .hero-caption-centered h1 { 
-        font-size: 2rem; /* Lebih kecil biar gak penuh */
-    }
-    
-    /* 3. SETTING NAVBAR TRANSPARAN & COMPACT */
+    /* --- 4. SETTING NAVBAR TRANSPARAN & COMPACT --- */
     .navbar { 
         background-color: transparent; 
         border-bottom: none; 
-        padding: 10px 0; /* Padding lebih kecil */
+        padding: 10px 0; 
     } 
 
-   .container-fluid {
+    .container-fluid {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -402,19 +436,18 @@ section {
     .navbar.scrolled {
         background-color: white !important;
         border-bottom: 1px solid #ddd;
-        padding: 5px 0; /* Saat discroll lebih tipis lagi */
+        padding: 5px 0; 
     }
 
-    /* 4. PERKECIL LOGO & TEKS BRAND DI HP */
+    /* --- 5. PERKECIL LOGO & MENU --- */
     .navbar-brand .img-logo {
-        width: 40px;  /* Logo jadi 40px */
+        width: 40px; 
         height: auto;
     }
     .navbar-brand .brand-text {
-        font-size: 1.1rem; /* Tulisan jadi lebih kecil */
+        font-size: 1.1rem; 
     }
 
-    /* 5. MENU DROPDOWN PUTIH */
     .navbar-collapse {
         background-color: white;
         padding: 15px;
@@ -433,25 +466,25 @@ section {
 
 /* Ubah garis default menjadi titik bulat */
 .carousel-indicators [data-bs-target] {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%; /* Membuat jadi bulat */
-    background-color: rgba(255, 255, 255, 0.5); /* Warna titik mati */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.5); 
     border: none;
-    margin: 0 6px; /* Jarak antar titik */
+    margin: 0 5px; 
     transition: all 0.3s ease;
 }
 
-/* Style titik yang sedang aktif (Slide saat ini) */
+/* Style titik yang sedang aktif */
 .carousel-indicators .active {
-    background-color: var(--brand-light-blue); /* Warna titik aktif (Biru RSC) */
-    transform: scale(1.3); /* Titik aktif sedikit lebih besar */
+    background-color: var(--brand-light-blue); 
+    transform: scale(1.3); 
     opacity: 1;
 }
 
-/* Pastikan posisi titik agak naik supaya tidak terlalu mepet bawah layar HP */
+/* Posisi titik di bawah */
 .carousel-indicators {
-    bottom: 20px;
+    bottom: 15px;
     z-index: 10;
 }
 
@@ -460,7 +493,7 @@ section {
    ========================================= */
 /* Agar logo di Laptop tetap ukuran normal */
 .img-logo {
-    width: 60px; /* Ukuran normal di laptop */
+    width: 60px; 
     height: auto;
     transition: all 0.3s;
 }
@@ -469,7 +502,6 @@ section {
 .brand-text {
     font-weight: 800;
 }
-
 /* =========================================
    13. FIX KHUSUS APPLE DEVICES & LOAD MORE
    ========================================= */
@@ -543,4 +575,5 @@ input, textarea, select {
         border-radius: 12px;
     }
 }
+
 
