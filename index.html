@@ -23,17 +23,23 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/logos/rsc-favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/RSC-logo.svg" type="image/x-icon">
   </head>
   
   <body data-bs-spy="scroll" data-bs-target="#navbarNav" tabindex="0">
 
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+   <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
       <div class="container">
-        <a class="navbar-brand" href="#home">RSC Swimming Pool</a>
+        
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+            <img src="assets/images/logo.svg" alt="Logo RSC" class="img-logo me-2">
+            <span class="brand-text">RSC Swimming Pool</span>
+        </a>
+        
         <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto text-center mt-3 mt-lg-0 align-items-center gap-2">
             <li class="nav-item"><a class="nav-link active" href="#home">Beranda</a></li>
@@ -47,9 +53,16 @@
       </div>
     </nav>
 
-    <header id="home" class="carousel slide" data-bs-ride="carousel">
+    <header id="home" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+      
+      <div class="carousel-indicators pb-3">
+        <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
       <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: url('assets/images/HeroSection1.webp')">
+        <div class="carousel-item active" style="background-image: url('assets/images/foto awal.webp')">
           <div class="hero-overlay"></div>
           <div class="hero-caption-centered" data-aos="zoom-in">
             <span class="badge bg-success rounded-pill px-4 py-2 mb-2 fs-6"><i class="bi bi-geo-alt-fill"></i> PURWAKARTA</span>
@@ -57,7 +70,7 @@
             <p class="fs-5 d-none d-md-block">Bersih, Asri, dan Ramah Keluarga.</p>
           </div>
         </div>
-        <div class="carousel-item" style="background-image: url('assets/images/slider_2.webp')">
+        <div class="carousel-item" style="background-image: url('assets/images/foto awal 2.webp')">
           <div class="hero-overlay"></div>
           <div class="hero-caption-centered">
             <span class="badge bg-primary rounded-pill px-4 py-2 mb-2 fs-6"><i class="bi bi-water"></i> FAMILY FRIENDLY</span>
@@ -65,7 +78,7 @@
             <p class="fs-5 d-none d-md-block">Beragam pilihan kolam untuk balita hingga dewasa.</p>
           </div>
         </div>
-        <div class="carousel-item" style="background-image: url('assets/images/slider_3.webp')">
+        <div class="carousel-item" style="background-image: url('assets/images/foto awal 3.webp')">
             <div class="hero-overlay"></div>
             <div class="hero-caption-centered">
               <span class="badge bg-warning text-dark rounded-pill px-4 py-2 mb-2 fs-6"><i class="bi bi-stars"></i> SPORTS CENTER</span>
@@ -191,7 +204,7 @@
                 <div class="col-lg-9">
                     
                     <div class="card border-0 shadow mb-5 overflow-hidden rounded-4" data-aos="fade-up">
-                        <img src="assets/images/pool_child.webp" class="card-img-top object-fit-cover" alt="Kolam 50cm" style="height: 350px;">
+                        <img src="assets/images/kolam 50cm.webp" class="card-img-top object-fit-cover" alt="Kolam 50cm" style="height: 350px;">
                         <div class="card-body p-4 p-lg-5">
                             <div class="d-flex align-items-center mb-3">
                                 <span class="badge bg-primary rounded-pill px-3 py-2 me-3 fs-6">Kedalaman 50 cm</span>
@@ -203,7 +216,7 @@
                     </div>
 
                     <div class="card border-0 shadow mb-5 overflow-hidden rounded-4" data-aos="fade-up">
-                        <img src="assets/images/pool_mid.webp" class="card-img-top object-fit-cover" alt="Kolam 75cm" style="height: 350px;">
+                        <img src="assets/images/kolam 75 cm.webp" class="card-img-top object-fit-cover" alt="Kolam 75cm" style="height: 350px;">
                         <div class="card-body p-4 p-lg-5">
                             <div class="d-flex align-items-center mb-3">
                                 <span class="badge bg-info rounded-pill px-3 py-2 me-3 fs-6">Kedalaman 75 cm</span>
@@ -215,7 +228,7 @@
                     </div>
 
                     <div class="card border-0 shadow mb-5 overflow-hidden rounded-4" data-aos="fade-up">
-                        <img src="assets/images/pool_teen.webp" class="card-img-top object-fit-cover" alt="Kolam 100cm" style="height: 350px;">
+                        <img src="assets/images/kolam 100 cm.webp" class="card-img-top object-fit-cover" alt="Kolam 100cm" style="height: 350px;">
                         <div class="card-body p-4 p-lg-5">
                             <div class="d-flex align-items-center mb-3">
                                 <span class="badge bg-success rounded-pill px-3 py-2 me-3 fs-6">Kedalaman 100 cm</span>
@@ -227,7 +240,7 @@
                     </div>
 
                     <div class="card border-0 shadow mb-5 overflow-hidden rounded-4" data-aos="fade-up">
-                        <img src="assets/images/pool_adult.webp" class="card-img-top object-fit-cover" alt="Kolam 1.5m" style="height: 350px;">
+                        <img src="assets/images/kolam 150cm.webp" class="card-img-top object-fit-cover" alt="Kolam 1.5m" style="height: 350px;">
                         <div class="card-body p-4 p-lg-5">
                             <div class="d-flex align-items-center mb-3">
                                 <span class="badge bg-dark rounded-pill px-3 py-2 me-3 fs-6">Kedalaman 1.5 m</span>
@@ -278,7 +291,7 @@
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in">
                     <div class="program-card-compact text-center p-5 rounded-4 shadow-sm bg-white border h-100">
                         <div class="icon-circle bg-light-blue text-brand mx-auto mb-4">
-                            <i class="bi bi-person-swimming fs-1"></i>
+                            <i class="bi bi-water fs-1"></i>
                         </div>
                         <h3 class="fw-bold">Les Renang</h3>
                         <p class="text-muted">Untuk anak & dewasa dengan pelatih profesional.</p>
@@ -304,10 +317,11 @@
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="program-card-compact text-center p-5 rounded-4 shadow-sm bg-white border h-100">
                         <div class="icon-circle bg-light-danger text-danger mx-auto mb-4" style="background-color: #ffe5e5;">
-                            <i class="bi bi-bullseye fs-1"></i> </div>
+                            <i class="bi bi-bullseye fs-1"></i> 
+                        </div>
                         <h3 class="fw-bold">Archery Class</h3>
                         <p class="text-muted">Melatih fokus dan ketenangan dengan memanah.</p>
-                        <button class="btn btn-outline-danger rounded-pill px-4 mt-3" data-bs-toggle="modal" data-bs-target="#modalArchery">
+                        <button class="btn btn-outline-primary rounded-pill px-4 mt-3" data-bs-toggle="modal" data-bs-target="#modalArchery">
                             Lihat Jadwal & Harga
                         </button>
                     </div>
@@ -328,7 +342,7 @@
                 
                 <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
                     <div class="amenity-card bg-light-blue h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center cursor-pointer">
-                        <img src="assets/images/amenity_musholla.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Musholla">
+                        <img src="assets/images/musholla.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Musholla">
                         <div class="p-3">
                             <h5 class="fw-bold fs-6 text-brand">Musholla</h5>
                             <small class="text-muted">Musholla yang bersih, nyaman, dan terawat.</small>
@@ -338,7 +352,7 @@
 
                 <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
                     <div class="amenity-card bg-light-blue h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center cursor-pointer">
-                        <img src="assets/images/amenity_aula.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Aula">
+                        <img src="assets/images/aula.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Aula">
                         <div class="p-3">
                             <h5 class="fw-bold fs-6 text-brand">Aula Serbaguna</h5>
                             <small class="text-muted">Cocok untuk acara keluarga maupun kegiatan sekolah.</small>
@@ -348,7 +362,7 @@
 
                 <div class="col-6 col-md-3" data-aos="fade-up">
                     <div class="amenity-card bg-light-blue h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center cursor-pointer">
-                        <img src="assets/images/amenity_playground.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Playground">
+                        <img src="assets/images/playground.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Playground">
                         <div class="p-3">
                             <h5 class="fw-bold fs-6 text-brand">Playground</h5>
                             <small class="text-muted">Area bermain anak sederhana non-air.</small>
@@ -358,7 +372,7 @@
 
                 <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
                     <div class="amenity-card bg-light-blue h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center cursor-pointer">
-                        <img src="assets/images/amenity_gazebo.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Gazebo">
+                        <img src="assets/images/gazebo.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Gazebo">
                         <div class="p-3">
                             <h5 class="fw-bold fs-6 text-brand">Gazebo Keluarga</h5>
                             <small class="text-muted">Nyaman untuk bersantai atau menunggu anak berenang.</small>
@@ -368,7 +382,7 @@
 
                 <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
                     <div class="amenity-card bg-light-blue h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center cursor-pointer">
-                        <img src="assets/images/amenity_bilas.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Bilas">
+                        <img src="assets/images/kamar bilas.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Bilas">
                         <div class="p-3">
                             <h5 class="fw-bold fs-6 text-brand">Kamar Bilas</h5>
                             <small class="text-muted">Air bersih dan shower yang melimpah.</small>
@@ -378,7 +392,7 @@
 
                 <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
                     <div class="amenity-card bg-light-blue h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center cursor-pointer">
-                        <img src="assets/images/amenity_toilet.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Toilet">
+                        <img src="assets/images/toilet.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Toilet">
                         <div class="p-3">
                             <h5 class="fw-bold fs-6 text-brand">Toilet Bersih</h5>
                             <small class="text-muted">Terpisah pria dan wanita, tersebar di area strategis.</small>
@@ -388,7 +402,7 @@
 
                 <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
                     <div class="amenity-card bg-light-blue h-100 border-0 shadow-sm rounded-4 overflow-hidden text-center cursor-pointer">
-                        <img src="assets/images/parkir.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Parkir">
+                        <img src="assets/images/parkiran.webp" class="img-fluid w-100 object-fit-cover" style="height: 180px;" alt="Parkir">
                         <div class="p-3">
                             <h5 class="fw-bold fs-6 text-brand">Parkir Luas</h5>
                             <small class="text-muted">Area parkir aman untuk kendaraan pengunjung.</small>
@@ -411,7 +425,7 @@
             <div class="card border-0 shadow-sm overflow-hidden rounded-4 bg-light-blue" data-aos="fade-up">
                 <div class="row g-0 align-items-center">
                     <div class="col-lg-6">
-                        <img src="assets/images/amenity_kantin.webp" class="img-fluid w-100 object-fit-cover" style="height: 350px;" alt="Suasana Kantin RSC">
+                        <img src="assets/images/foto bantuan kantin.webp" class="img-fluid w-100 object-fit-cover" style="height: 350px;" alt="Suasana Kantin RSC">
                     </div>
                     <div class="col-lg-6 p-4 p-lg-5 text-center text-lg-start">
                         <h3 class="fw-bold text-brand mb-3"><i class="bi bi-cup-hot-fill me-2"></i>Kantin & Kuliner</h3>
@@ -435,7 +449,7 @@
             <div class="card-sport shadow-sm mb-4" data-aos="fade-up">
                 <div class="row g-0 align-items-center">
                     <div class="col-lg-6">
-                        <img src="assets/images/mini_soccer.webp" class="img-fluid img-sport-cover" loading="lazy" alt="Mini Soccer">
+                        <img src="assets/images/mini soccer.webp" class="img-fluid img-sport-cover" loading="lazy" alt="Mini Soccer">
                     </div>
                     <div class="col-lg-6">
                         <div class="card-sport-body">
@@ -501,34 +515,51 @@
                 <h2 class="fw-bold text-brand display-5">Galeri Foto</h2>
                 <p class="text-muted">Dokumentasi keseruan pengunjung RSC</p>
             </div>
-            <div class="row g-4">
-                <div class="col-6 col-md-4" data-aos="zoom-in">
-                    <div class="gallery-frame"><img src="assets/images/gallery_1_thumb.webp" loading="lazy" alt="Galeri RSC"></div>
-                </div>
-                <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="gallery-frame"><img src="assets/images/gallery_2_thumb.webp" loading="lazy" alt="Galeri RSC"></div>
-                </div>
-                <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="gallery-frame"><img src="assets/images/gallery_3_thumb.webp" loading="lazy" alt="Galeri RSC"></div>
-                </div>
-                <div class="col-6 col-md-4" data-aos="zoom-in">
-                    <div class="gallery-frame"><img src="assets/images/pool_child.webp" loading="lazy" alt="Galeri RSC"></div>
-                </div>
-                <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="gallery-frame"><img src="assets/images/pool_mid.webp" loading="lazy" alt="Galeri RSC"></div>
-                </div>
-                <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="gallery-frame"><img src="assets/images/pool_adult.webp" loading="lazy" alt="Galeri RSC"></div>
-                </div>
-            </div>
-        </div>
+            <div class="row g-4 justify-content-center" id="galleryContainer">
+    
+    <div class="col-6 col-md-4" data-aos="zoom-in">
+        <div class="gallery-frame"><img src="assets/images/galeri.webp" loading="lazy" alt="Galeri RSC"></div>
+    </div>
+    <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="gallery-frame"><img src="assets/images/galeri 2.webp" loading="lazy" alt="Galeri RSC"></div>
+    </div>
+    <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="gallery-frame"><img src="assets/images/galeri 3.webp" loading="lazy" alt="Galeri RSC"></div>
+    </div>
+    <div class="col-6 col-md-4" data-aos="zoom-in">
+        <div class="gallery-frame"><img src="assets/images/galeri 4.webp" loading="lazy" alt="Galeri RSC"></div>
+    </div>
+    <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="gallery-frame"><img src="assets/images/galeri 5.webp" loading="lazy" alt="Galeri RSC"></div>
+    </div>
+    <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="gallery-frame"><img src="assets/images/galeri 6.webp" loading="lazy" alt="Galeri RSC"></div>
+    </div>
+
+    <div class="col-6 col-md-4 hidden-gallery d-none" data-aos="zoom-in">
+        <div class="gallery-frame"><img src="assets/images/galeri 7.webp" loading="lazy" alt="Galeri RSC"></div>
+    </div>
+    <div class="col-6 col-md-4 hidden-gallery d-none" data-aos="zoom-in" data-aos-delay="100">
+        <div class="gallery-frame"><img src="assets/images/galeri 8.webp" loading="lazy" alt="Galeri RSC"></div>
+    </div>
+    <div class="col-6 col-md-4 hidden-gallery d-none" data-aos="zoom-in" data-aos-delay="200">
+        <div class="gallery-frame"><img src="assets/images/galeri 9.webp" loading="lazy" alt="Galeri RSC"></div>
+    </div>
+
+</div>
+
+<div class="text-center mt-4">
+    <button id="btnLoadMore" class="btn btn-outline-primary rounded-pill px-5 py-2 fw-bold transition-all">
+        Lihat Lebih Banyak <i class="bi bi-chevron-down ms-2"></i>
+    </button>
+</div>
     </section>
 
     <section id="instagram" class="py-5 bg-white mb-5 border-top">
         <div class="container">
             <div class="marquee-wrapper">
                 <div class="marquee-content">
-                    Jangan Ketinggalan Promo dan Event Terbaru!! Les Renang 300rb | Gym 150rb/bln | Info lebih lanjut hubungi Admin. &nbsp;&nbsp;&mdash;&nbsp;&nbsp; Jangan Ketinggalan Promo dan Event Terbaru!! Les Renang 300rb | Gym 150rb/bln | Info lebih lanjut hubungi Admin.
+                    Jangan Ketinggalan Promo dan Event Terbaru!! Les Renang 300rb | Gym 150rb/bln | Info lebih lanjut hubungi Admin.
                 </div>
             </div>
             
@@ -636,7 +667,7 @@
                 <div class="modal-body p-4">
                     <div class="row">
                         <div class="col-md-5 mb-3">
-                            <img src="assets/images/program_hydro.webp" class="img-fluid rounded-3 w-100" alt="Hydro Therapy">
+                            <img src="assets/images/hydro terapi.webp" class="img-fluid rounded-3 w-100" alt="Hydro Therapy">
                             <div class="alert alert-warning mt-3 text-center">
                                 <h4 class="fw-bold mb-0">Rp 260.000</h4>
                                 <small>/bulan (Member Baru)</small>
@@ -673,7 +704,7 @@
                 <div class="modal-body p-4">
                     <div class="row">
                         <div class="col-md-5 mb-3">
-                            <img src="assets/images/Archery.webp" class="img-fluid rounded-3 w-100 object-fit-cover" alt="Archery Class">
+                            <img src="assets/images/archery.webp" class="img-fluid rounded-3 w-100 object-fit-cover" alt="Archery Class">
                             <div class="alert alert-danger mt-3 text-center">
                                 <h4 class="fw-bold mb-0">Rp 100.000</h4>
                                 <small>/ 4x Pertemuan</small>
@@ -712,7 +743,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body text-center p-0">
-                    <img src="assets/images/menu_kantin.webp" class="img-fluid w-100" alt="Daftar Menu Makanan">
+                    <img src="assets/images/daftar menu.webp" class="img-fluid w-100" alt="Daftar Menu Makanan">
                 </div>
                 <div class="modal-footer justify-content-center bg-light">
                     <small class="text-muted">Harga dapat berubah sewaktu-waktu.</small>
@@ -729,7 +760,7 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body p-0">
-                    <img src="assets/images/harga_minisoccer.webp" class="w-100 object-fit-cover" alt="Daftar Harga Mini Soccer">
+                    <img src="assets/images/harga minisoccer.webp" class="w-100 object-fit-cover" alt="Daftar Harga Mini Soccer">
                 </div>
                 <div class="modal-footer justify-content-center bg-light">
                     <a href="https://wa.me/6281213867251?text=Halo%20Admin,%20saya%20mau%20booking%20lapangan%20Mini%20Soccer" target="_blank" class="btn btn-success rounded-pill">
