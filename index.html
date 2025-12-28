@@ -1,384 +1,690 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RSC Swimming Pool</title>
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>RSC Swimming Pool - Wisata Keluarga Terbaik di Purwakarta</title>
+
+    <meta name="description" content="RSC Swimming Pool Purwakarta. Wisata air keluarga bersih, asri, dan ramah anak. Fasilitas lengkap: Kolam Renang, Gym, Mini Soccer, dan Les Renang.">
+    <meta name="keywords" content="Kolam Renang Purwakarta, Les Renang Purwakarta, Wisata Keluarga Purwakarta, RSC Swimming Pool, Ruly Sport Center">
+    <meta name="author" content="RSC Swimming Pool">
+
+    <meta property="og:title" content="RSC Swimming Pool - Wisata Keluarga Purwakarta">
+    <meta property="og:description" content="Nikmati liburan seru bersama keluarga dengan fasilitas kolam renang higienis, gym, dan area santai yang asri.">
+    <meta property="og:image" content="assets/images/HeroSection1.webp"> <meta property="og:url" content="https://www.rscswimmingpool.com"> <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/logos/rsc-favicon.ico" type="image/x-icon">
-   </head>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </head>
   
- <body>
-    <header class="main-header bg-opacity-7 rounded-pill">
-    <div class="container">
-        <h1 class="logo text-info">
-            RSC Swimming Pool
-        </h1>
-        <nav class="main-nav nav-item text-light">
-            <ul class="nav nav-pills">
-                <li><a class="btn btn-outline-info text-primary m-2" aria-current="page"  href="#pools">Kolam</a></li>
-                <li><a class="btn btn-outline-info text-primary m-2" aria-current="page" href="#amenities">Fasilitas</a></li>
-                <li><a class="btn btn-outline-info text-primary m-2" href="#sports">Olahraga</a></a></li>
-                <li><a class="btn btn-outline-info text-primary m-2" href="#gallery">Galeri</a></a></li>
-        </ul>
-        </nav>
-        
-    </div>
+  <body data-bs-spy="scroll" data-bs-target="#navbarNav" tabindex="0">
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#home">RSC Swimming Pool</a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center mt-3 mt-lg-0 align-items-center gap-2">
+            <li class="nav-item"><a class="nav-link active" href="#home">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pools">Kolam</a></li>
+            <li class="nav-item"><a class="nav-link" href="#programs">Les & Terapi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#amenities">Fasilitas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('assets/images/HeroSection1.webp')">
+          <div class="hero-overlay"></div>
+          <div class="hero-caption-centered" data-aos="zoom-in">
+            <span class="badge bg-success rounded-pill px-4 py-2 mb-2 fs-6"><i class="bi bi-geo-alt-fill"></i> PURWAKARTA</span>
+            <h1 class="display-3">RSC Swimming Pool</h1>
+            <p class="fs-5 d-none d-md-block">Bersih, Asri, dan Ramah Keluarga.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('assets/images/slider_2.webp')">
+          <div class="hero-overlay"></div>
+          <div class="hero-caption-centered">
+            <span class="badge bg-primary rounded-pill px-4 py-2 mb-2 fs-6"><i class="bi bi-water"></i> FAMILY FRIENDLY</span>
+            <h1 class="display-3">Wisata Air Keluarga</h1>
+            <p class="fs-5 d-none d-md-block">Beragam pilihan kolam untuk balita hingga dewasa.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('assets/images/slider_3.webp')">
+            <div class="hero-overlay"></div>
+            <div class="hero-caption-centered">
+              <span class="badge bg-warning text-dark rounded-pill px-4 py-2 mb-2 fs-6"><i class="bi bi-stars"></i> SPORTS CENTER</span>
+              <h1 class="display-3">Pusat Olahraga Terpadu</h1>
+              <p class="fs-5 d-none d-md-block">Renang, Gym, Memanah, hingga Mini Soccer.</p>
+            </div>
+        </div>
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      
+      <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </header>
 
-    <!-- CTA FLOATING -->
-     <div class="">
-    <a href="https://wa.me/628987293203" class="btn-floating-wa d-flex align-items-center justify-content-center gap-2 fw-semibold" target="_blank">
-        <span class="d-none d-md-inline">Pesan Tiket Sekarang!!</span>
-        <i class="bi bi-whatsapp fs-5"></i>
-    </a>
-    </div>
-
-    <div class="hero-header" style="background-image: url('assets/images/HeroSection1.webp');">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <p class="display-1 text-center">Welcome at Ruly Sport Center</p>
-            <p class="text-center display-">Satu Tempat, Banyak Cerita</p>
-
-        </div>
-    </div>
-    
-    <section id="home" class="hero-section">
-        <div class="hero-slider-inner">
-            <div class="hero-slide active" style="background-image: url('assets/images/HeroSection1.webp');">
-                <div class="hero-content container">
-                    <h1>RSC Swimming Pool</h1>
-                    <p class="tagline">Air Jernih, Suasana Ceria. Destinasi Rekreasi Air Keluarga Anda.</p>
-                </div>
-            </div>
-            
-            <div class="hero-slide" style="background-image: url('assets/images/slider_2.webp');">
-                <div class="hero-content container">
-                    <h1>Nikmati Kolam Semi-Olimpik</h1>
-                    <p class="tagline">Berlatih serius dengan fasilitas terbaik, selalu higienis.</p>
-                </div>
-            </div>
-            
-            <div class="hero-slide" style="background-image: url('assets/images/slider_3.webp');">
-                <div class="hero-content container">
-                    <h1>Water Slide & Wahana Anak Seru</h1>
-                    <p class="tagline">Perosotan spiral raksasa siap memacu adrenalin si kecil dan remaja!</p>
-                </div>
-            </div>
-        </div>
-        
-        <button class="slider-nav prev-slide"><i class="bi bi-chevron-left"></i></button>
-        <button class="slider-nav next-slide"><i class="bi bi-chevron-right"></i></button>
-        
-        <div class="slider-dots"></div>
-    </section>
-
-     <section id="intro" class="section-content section-light-blue">
-        <div class="container text-center">
-            <h1 class=" display-3">Nikmati Pengalaman Berenang Terbaik di RSC</h1>
-            <p class="intro-text">RSC Swimming Pool hadir sebagai oase rekreasi air untuk seluruh keluarga. Dengan air yang terawat higienis setiap hari, kami menyediakan lingkungan yang aman dan menyenangkan, baik untuk belajar, berlatih, maupun bersantai.</p>
-            <div class="intro-stats">
-                <div class="stat-item">
-                    <i class="bi bi-water"></i>
-                    <h4>Air Higienis</h4>
-                    <p>PH & Klorin selalu terjaga.</p>
-                </div>
-                <div class="stat-item">
-                    <i class="bi bi-shield-check"></i>
-                    <h4>Pengawas Terlatih</h4>
-                    <p>Keamanan Anda prioritas kami.</p>
-                </div>
-                <div class="stat-item">
-                    <i class="bi bi-person-hearts"></i>
-                    <h4>Ramah Keluarga</h4>
-                    <p>Fasilitas lengkap untuk balita hingga dewasa.</p>
-                </div>
-            </div>
-     </section>
- 
-    <section id="pools" class="section-content section-white">
+    <section id="about" class="py-5 bg-light-blue border-bottom">
         <div class="container">
-            <h2 class="section-title text-dark">4 Pilihan Kolam Unggulan Kami</h2>
-            
-            <div class="pool-detail-card">
-                <img src="assets/images/pool_child.webp" alt="Kolam Anak dan Wahana" class="pool-image">
-                <div class="pool-text">
-                    <h3>Kolam Wahana Anak (Kedalaman 30-50 cm)</h3>
-                    <p>Surga bagi si kecil! Dilengkapi dengan air mancur jamur, ember tumpah, dan perosotan mini yang berwarna-warni. Aman untuk balita dan anak-anak.</p>
-                    <ul class="features-list">
-                        <li><i class="bi bi-check-circle-fill"></i> Perosotan Mini & Air Mancur</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Lantai Anti-Slip</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Area Tenda Bayi</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="pool-detail-card reverse">
-                <img src="assets/images/pool_adult.webp" alt="Kolam Renang Dewasa Standar" class="pool-image">
-                <div class="pool-text">
-                    <h3>Kolam Semi-Olimpik (Kedalaman 120-180 cm)</h3>
-                    <p>Kolam standar untuk latihan serius atau berenang santai. Tersedia 8 lintasan dan papan loncat di area kedalaman 180 cm. Cocok untuk semua level perenang dewasa.</p>
-                    <ul class="features-list">
-                        <li><i class="bi bi-check-circle-fill"></i> 8 Lintasan Berstandar</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Area Terpisah Papan Loncat</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Tersedia Instruktur Privat</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="pool-detail-card">
-                <img src="assets/images/pool_slide.webp" alt="Kolam Remaja Water Slide" class="pool-image">
-                <div class="pool-text">
-                    <h3>Kolam Remaja & Water Slide (Kedalaman 100 cm)</h3>
-                    <p>Kolam transisi dengan kedalaman ideal untuk remaja. Daya tarik utama adalah *water slide* spiral setinggi 10 meter yang dijamin memacu adrenalin!</p>
-                    <ul class="features-list">
-                        <li><i class="bi bi-check-circle-fill"></i> Perosotan Spiral Raksasa</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Penurunan Bertahap (Tepi ke Tengah)</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="pool-detail-card reverse">
-                <img src="assets/images/pool_warm.webp" alt="Kolam Hangat atau Terapi" class="pool-image">
-                <div class="pool-text">
-                    <h3>Kolam Air Hangat (Kedalaman 80 cm)</h3>
-                    <p>Sempurna untuk relaksasi atau pemulihan pasca olahraga. Didesain dengan fitur *jacuzzi* sederhana. Area ini tenang dan jauh dari keramaian anak-anak.</p>
-                    <ul class="features-list">
-                        <li><i class="bi bi-check-circle-fill"></i> Suhu Air Stabil</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Fitur Jacuzzi Mini</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     <section id="amenities" class="section-content section-light-blue">
-        <div class="container text-center">
-            <div class="col" data-aos="fade-down">
-                <h2 class="section-title" >Fasilitas Pendukung Kolam</h2>
-            <p class="intro-text mb-5">Kami menyediakan fasilitas lengkap untuk kenyamanan berenang dan bersantai Anda, mulai dari tempat istirahat hingga penyewaan alat.</p>
-            </div>
-        
-            <div class="amenities-grid">
-                <div class="row justify-content-center fs-5 text-center">
-                    <div class="col-md-4" data-aos="fade-right">
-                            <div class="amenity-card">
-                                <img src="assets/images/amenity_gazebo.webp" alt="Gazebo Sewa" class="amenity-image">
-                                <h4>Gazebo Keluarga (Area Bersantai)</h4>
-                                <p>Tersedia lebih dari 20 gazebo eksklusif dengan sistem sewa harian. Sempurna untuk makan siang atau istirahat keluarga.</p>
-                                <a href="#" class="small-cta">Cek Ketersediaan</a>
-                            </div>
-                    </div>
-                    <div class="col-md-4" data-aos="fade-right">
-                            <div class="amenity-card">
-                                <img src="assets/images/amenity_locker.webp" alt="Kamar Bilas Bersih" class="amenity-image">
-                                <h4>Kamar Ganti & Loker Bersih</h4>
-                                <p>Kamar bilas yang luas, bersih, dan higienis. Loker penyimpanan aman tersedia dengan sistem kunci digital.</p>
-                                <a href="#" class="small-cta">Lihat Denah</a>
-                            </div>
-                    </div>
-                    <div class="col-md-4" data-aos="fade-left">
-                            <div class="amenity-card">
-                                <img src="assets/images/amenity_gear.webp" alt="Pelampung dan Kaca Mata" class="amenity-image">
-                                <h4>Penyewaan Alat Renang</h4>
-                                <p>Tidak perlu repot membawa. Tersedia sewa pelampung, kacamata, ban renang, dan papan seluncur untuk anak-anak.</p>
-                                <a href="#" class="small-cta">Cek Harga Sewa</a>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-
-        <section id="sports" class="section-content section-dark-blue">
-        <div class="container">
-            <h2 class="section-title text-white" data-aos="fade-up" data-aos-duration="1000">Fasilitas Olahraga Non-Kolam</h2>
-
-            <div class="pool-detail-card section-white-text">
-                <img src="assets/images/sport_soccer.webp" alt="Mini Soccer RSC" class="pool-image">
-                <div class="pool-text">
-                    <h3>Mini Soccer Field (Sewa Per Jam)</h3>
-                    <p>Lapangan sepak bola mini dengan rumput sintetis berkualitas. Ideal untuk turnamen kecil atau sesi latihan rutin tim komunitas Anda. Tersedia pencahayaan malam hari.</p>
-                    <ul class="features-list">
-                        <li><i class="bi bi-currency-dollar"></i> **Harga Sewa:** Mulai Rp 180.000/jam.</li>
-                        <li><i class="bi bi-clock"></i> **Jam Operasi:** 09.00 - 23.00 WIB.</li>
-                        <li><i class="bi bi-lightbulb"></i> Lampu Tembak Profesional.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="pool-detail-card reverse section-white-text">
-                <img src="assets/images/sport_gym.webp" alt="Gym dan Fitness RSC" class="pool-image">
-                <div class="pool-text">
-                    <h3>Gym & Fitness Center</h3>
-                    <p>Area kebugaran modern dengan alat-alat kardio dan beban terbaru. Tersedia paket keanggotaan bulanan dan *personal trainer* bersertifikat.</p>
-                    <ul class="features-list">
-                        <li><i class="bi bi-currency-dollar"></i> **Harga:** Mulai Rp 250.000/bulan.</li>
-                        <li><i class="bi bi-clock"></i> **Jam Operasi:** 06.00 - 21.00 WIB.</li>
-                        <li><i class="bi bi-person-fill-gear"></i> Personal Trainer Tersedia.</li>
-                    </ul>
-                </div>
-            </div>
-
-          <div class="pool-detail-card section-white-text">
-                <img src="assets/images/villa_rsc.webp" alt="Villa RSC" class="pool-image">
-                <div class="pool-text">
-                    <h3>Penyewaan Villa Keluarga</h3>
-                    <p>Nikmati istirahat total dengan menginap di villa pribadi kami. Fasilitas lengkap, kolam renang eksklusif, dan pemandangan terbaik.</p>
-                    
-                    <ul class="features-list">
-                        <li><i class="bi bi-person-fill"></i> Kapasitas Hingga 10 Orang.</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Kolam Renang Privat.</li>
-                        <li><i class="bi bi-calendar"></i> Pemesanan H-7.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <section id="gallery" class="section-content section-white">
-        <div class="container text-center">
-            <h2 class="section-title text-dark">Galeri Foto Eksklusif RSC</h2>
-            <p class="intro-text mb-5">Jelajahi momen-momen terbaik dan keindahan RSC Swimming Pool dari berbagai sudut. Klik untuk melihat detail.</p>
-            
-            <div class="gallery-grid">
-                <a href="assets/images/gallery_1.webp" class="gallery-item" target="_blank">
-                    <img src="assets/images/gallery_1_thumb.webp" alt="Foto Kolam Renang Pagi Hari" class="gallery-image">
-                </a>
-                <a href="assets/images/gallery_2.webp" class="gallery-item" target="_blank">
-                    <img src="assets/images/gallery_2_thumb.webp" alt="Foto Lapangan Mini Soccer" class="gallery-image">
-                </a>
-                <a href="assets/images/gallery_3.webp" class="gallery-item" target="_blank">
-                    <img src="assets/images/gallery_3_thumb.webp" alt="Foto Area Gazebo Keluarga" class="gallery-image">
-                </a>
-                <a href="assets/images/gallery_4.webp" class="gallery-item" target="_blank">
-                    <img src="assets/images/gallery_4_thumb.webp" alt="Foto Water Slide Anak" class="gallery-image">
-                </a>
-                <a href="assets/images/gallery_5.webp" class="gallery-item" target="_blank">
-                    <img src="assets/images/gallery_5_thumb.webp" alt="Foto Kelas Aerobik Air" class="gallery-image">
-                </a>
-                <a href="assets/images/gallery_6.webp" class="gallery-item" target="_blank">
-                    <img src="assets/images/gallery_6_thumb.webp" alt="Foto Loker dan Kamar Bilas" class="gallery-image">
-                </a>
-            </div>
-            
-            <a href="#" class="cta-button large-cta mt-5">Lihat Lebih Banyak Foto</a>
-        </div>
-    </section>
-
-    <!-- INSTAGRAM SECTION -->
-    <section id="instagram" class="section-content section-white">
-        
-        <div class="container instagram-embed rounded-4">
-            <marquee behavior="" direction="" scrollamount="25"><h1 class="display-3">Jangan Ketinggalan Promo dan  Event Terbaru!!</h1></marquee>
-            <div class="ratio ratio-1x1 rounded-4 overflow-hidden shadow instagram-card-wrapper">
-                <div class="instagram-card">
-                <iframe src="https://www.instagram.com/rsc.swimmingpool/embed" frameborder="0" allowtransparency="true" allowfullscreen="" scrolling="no" style="border:none; width:100%; height: 700px;">
-                  </iframe>
-                 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section-content section-light-blue">
-        <div class="container">
-            <h2 class="section-title">Hubungi Kami & Temukan Lokasi</h2>
-
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>RSC Swimming Pool</h3>
-                    <p class="lead mb-4">Siap melayani pertanyaan, pemesanan, dan informasi keanggotaan Anda.</p>
-                    
-                    <h4 class="mt-4"><i class="bi bi-geo-alt"></i> Alamat Kami</h4>
-                    <p>Jl. Olahraga No. 12, Kelurahan [Nama Kelurahan], [Nama Kota Anda], 12345.</p>
-                    
-                    <h4 class="mt-4"><i class="bi bi-telephone"></i> Kontak & Booking</h4>
-                    <p>Telepon: (021) 1234 5678</p>
-                    <p>Email: info@rulysportcenter.com</p>
-
-                    <h4 class="mt-4"><i class="bi bi-share"></i> Ikuti Kami</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
-                    </div>
-                </div>
-
-                <div class="google-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.7629376509984!2d107.4727405!3d-6.4954557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690dd5ec4e0533%3A0xb36c071287547cde!2sRuly%20Sport%20Center!5e0!3m2!1sid!2sid!4v1765361496372!5m2!1sid!2sid"
-                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="row gx-5 mb-5 align-items-center text-center text-lg-start">
                 
-                    <a href="https://maps.app.goo.gl/RCyXoik2Dp8HWxF47" target="_blank" class="cta-button map-cta">Buka di Google Maps</a>
+                <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mt-2 lh-sm">
+                        Selamat Datang di <br>
+                        <span class="text-brand">Ruly Sport Center (RSC)</span>
+                    </h2>
+                    <div class="bg-brand mt-4 mx-auto ms-lg-0" style="width: 80px; height: 6px; border-radius: 10px;"></div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left">
+                    <span class="text-brand fw-bold text-uppercase ls-2 mb-3 d-block">Tentang Kami</span>
+                    
+                    <p class="text-muted fs-5 lh-lg">
+                        <strong>Ruly Sport Center (RSC)</strong> hadir untuk melengkapi kebutuhan olahraga keluarga Anda. Kami menyediakan berbagai fasilitas olahraga seperti kolam renang, gym, mini soccer, dan panahan dengan lingkungan yang <strong>Bersih, Asri, dan tentunya Ramah Keluarga.</strong>
+                    </p>
+                    <p class="text-muted">
+                        Nikmati suasana yang sejuk, air yang jernih, serta beragam fasilitas olahraga mulai dari Gym hingga Mini Soccer dalam satu kawasan yang asri.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div class="col-lg-10">
+                    <div class="bg-white p-5 rounded-4 shadow-sm border position-relative overflow-hidden">
+                        <i class="bi bi-quote position-absolute text-light end-0 bottom-0 me-3 mb-n3" style="font-size: 10rem; opacity: 0.3;"></i>
+                        <div class="text-center mb-4">
+                            <h4 class="fw-bold text-brand text-uppercase">Visi & Misi Kami</h4>
+                            <p class="fst-italic fs-5 text-dark">"Membahagiakan sesama melalui olahraga dan wisata keluarga yang berkualitas."</p>
+                        </div>
+                        <div class="row text-start"> <div class="col-md-6">
+                                <ul class="list-unstyled list-mission text-muted">
+                                    <li class="mb-3">Memfasilitasi olahraga sunnah (renang & memanah) yang terjangkau.</li>
+                                    <li class="mb-3">Menjadi ruang tumbuh juara bagi talenta muda sepak bola.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled list-mission text-muted">
+                                    <li class="mb-3">Menyediakan pusat kebugaran (Gym & Aerobik) yang nyaman khususnya bagi wanita.</li>
+                                    <li class="mb-3">Mengintegrasikan rekreasi air dengan wisata kuliner keluarga.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <footer id="footer" class="main-footer">
-        ...
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-light-blue text-brand px-3 py-2 rounded-pill fw-bold mb-3">KENAPA MEMILIH KAMI?</span>
+                <h2 class="fw-bold display-6">Keunggulan RSC</h2>
+            </div>
+
+            <div class="row g-4 text-center justify-content-center">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="p-4 rounded-4 shadow-sm border h-100 hover-card bg-light-blue">
+                        <div class="icon-circle bg-white text-brand mx-auto mb-4 shadow-sm">
+                            <i class="bi bi-stars display-4"></i> </div>
+                        <h4 class="fw-bold text-brand">Bersih & Higienis</h4>
+                        <p class="text-muted mb-0">
+                            Kualitas air dan kebersihan area kolam selalu dijaga secara rutin. Area bilas dan toilet dibersihkan berkala demi kenyamanan dan keamanan seluruh pengunjung.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 rounded-4 shadow-sm border h-100 hover-card bg-light-warning">
+                        <div class="icon-circle bg-white text-warning mx-auto mb-4 shadow-sm">
+                            <i class="bi bi-tree-fill display-4"></i> </div>
+                        <h4 class="fw-bold text-dark">Asri & Sejuk</h4>
+                        <p class="text-muted mb-0">
+                            Lingkungan yang asri membuat waktu berenang dan bersantai terasa lebih nyaman dan menyegarkan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 rounded-4 shadow-sm border h-100 hover-card bg-light-blue">
+                        <div class="icon-circle bg-white text-success mx-auto mb-4 shadow-sm">
+                            <i class="bi bi-emoji-smile-fill display-4"></i> </div>
+                        <h4 class="fw-bold text-brand">Ramah Keluarga</h4>
+                        <p class="text-muted mb-0">
+                            Cocok untuk semua usia. Tersedia kolam anak yang aman, area bermain, serta gazebo untuk bersantai.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pools" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-down">
+                <h2 class="fw-bold text-brand display-5">Pilihan Kolam</h2>
+                <p class="text-muted">Tersedia berbagai kedalaman sesuai kebutuhan</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    
+                    <div class="card border-0 shadow mb-5 overflow-hidden rounded-4" data-aos="fade-up">
+                        <img src="assets/images/pool_child.webp" class="card-img-top object-fit-cover" alt="Kolam 50cm" style="height: 350px;">
+                        <div class="card-body p-4 p-lg-5">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill px-3 py-2 me-3 fs-6">Kedalaman 50 cm</span>
+                                <small class="text-muted fw-bold">BALITA</small>
+                            </div>
+                            <h3 class="fw-bold text-brand">Kolam Wahana Balita</h3>
+                            <p class="text-muted fs-5">Dilengkapi seluncuran/perosotan yang aman. Sangat ramah anak untuk bermain air dengan pengawasan orang tua.</p>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow mb-5 overflow-hidden rounded-4" data-aos="fade-up">
+                        <img src="assets/images/pool_mid.webp" class="card-img-top object-fit-cover" alt="Kolam 75cm" style="height: 350px;">
+                        <div class="card-body p-4 p-lg-5">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-info rounded-pill px-3 py-2 me-3 fs-6">Kedalaman 75 cm</span>
+                                <small class="text-muted fw-bold">ANAK</small>
+                            </div>
+                            <h3 class="fw-bold text-brand">Kolam Anak Luas</h3>
+                            <p class="text-muted fs-5">Area lebih luas dengan fasilitas <strong>Ember Tumpah</strong>. Lokasi strategis dekat dengan kursi tunggu orang tua.</p>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow mb-5 overflow-hidden rounded-4" data-aos="fade-up">
+                        <img src="assets/images/pool_teen.webp" class="card-img-top object-fit-cover" alt="Kolam 100cm" style="height: 350px;">
+                        <div class="card-body p-4 p-lg-5">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-success rounded-pill px-3 py-2 me-3 fs-6">Kedalaman 100 cm</span>
+                                <small class="text-muted fw-bold">REMAJA</small>
+                            </div>
+                            <h3 class="fw-bold text-brand">Kolam Tanggung</h3>
+                            <p class="text-muted fs-5">Cocok untuk anak yang sudah mahir renang atau dewasa pemula. Lokasi dekat pintu masuk utama.</p>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow mb-5 overflow-hidden rounded-4" data-aos="fade-up">
+                        <img src="assets/images/pool_adult.webp" class="card-img-top object-fit-cover" alt="Kolam 1.5m" style="height: 350px;">
+                        <div class="card-body p-4 p-lg-5">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-dark rounded-pill px-3 py-2 me-3 fs-6">Kedalaman 1.5 m</span>
+                                <small class="text-muted fw-bold">DEWASA</small>
+                            </div>
+                            <h3 class="fw-bold text-brand">Kolam Dewasa</h3>
+                            <p class="text-muted fs-5">Standar untuk olahraga renang serius. Lokasi tenang, dekat dengan gazebo dan berada di samping villa.</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 mt-2" data-aos="fade-up">
+                        <div class="col-md-6">
+                            <div class="bg-light-blue p-4 rounded-4 border text-center h-100 d-flex flex-column justify-content-center align-items-center shadow-sm">
+                                <div class="bg-white rounded-circle p-3 mb-3 text-warning shadow-sm" style="width: 70px; height: 70px; display:flex; align-items:center; justify-content:center;">
+                                    <i class="bi bi-ticket-perforated-fill fs-2"></i>
+                                </div>
+                                <h5 class="fw-bold text-brand text-uppercase mb-2 ls-1">Tiket Masuk (HTM)</h5>
+                                <h2 class="display-4 fw-bold text-dark mb-0">Rp 15.000</h2>
+                                <p class="text-muted mt-2 mb-0">Berenang Sepuasnya + Gratis Gazebo</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="bg-light-blue p-4 rounded-4 border text-center h-100 d-flex flex-column justify-content-center align-items-center shadow-sm">
+                                 <div class="bg-white rounded-circle p-3 mb-3 text-brand shadow-sm" style="width: 70px; height: 70px; display:flex; align-items:center; justify-content:center;">
+                                    <i class="bi bi-clock-fill fs-2"></i>
+                                </div>
+                                <h5 class="fw-bold text-brand text-uppercase mb-2 ls-1">Jam Operasional</h5>
+                                <h2 class="display-4 fw-bold text-dark mb-0">08.00 - 17.00</h2>
+                                <p class="text-muted mt-2 mb-0">Buka Setiap Hari (Senin - Minggu)</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="py-5 bg-light-blue">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold text-brand display-5">Program & Kelas</h2>
+                <p class="text-muted">Klik untuk melihat jadwal dan detail harga</p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-md-5 col-lg-4" data-aos="zoom-in">
+                    <div class="program-card-compact text-center p-5 rounded-4 shadow-sm bg-white border h-100">
+                        <div class="icon-circle bg-light-blue text-brand mx-auto mb-4">
+                            <i class="bi bi-person-swimming fs-1"></i>
+                        </div>
+                        <h3 class="fw-bold">Les Renang</h3>
+                        <p class="text-muted">Untuk anak & dewasa dengan pelatih profesional.</p>
+                        <button class="btn btn-outline-primary rounded-pill px-4 mt-3" data-bs-toggle="modal" data-bs-target="#modalLesRenang">
+                            Lihat Jadwal & Harga
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="program-card-compact text-center p-5 rounded-4 shadow-sm bg-white border h-100">
+                        <div class="icon-circle bg-light-warning text-warning mx-auto mb-4">
+                            <i class="bi bi-heart-pulse fs-1"></i>
+                        </div>
+                        <h3 class="fw-bold">Hydro Therapy</h3>
+                        <p class="text-muted">Terapi kesehatan air untuk kebugaran tubuh.</p>
+                        <button class="btn btn-outline-primary rounded-pill px-4 mt-3" data-bs-toggle="modal" data-bs-target="#modalHydro">
+                            Lihat Jadwal & Harga
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="amenities" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold text-brand display-5">Fasilitas Pendukung</h2>
+                <p class="text-muted">Fasilitas lengkap untuk kenyamanan seluruh pengunjung</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <img src="assets/images/amenity_musholla.webp" class="card-img-top object-fit-cover" style="height: 180px;" alt="Musholla">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold fs-6 text-brand">Musholla</h5>
+                            <small class="text-muted">Musholla yang bersih, nyaman, dan terawat.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <img src="assets/images/aula.webp" class="card-img-top object-fit-cover" style="height: 180px;" alt="Aula">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold fs-6 text-brand">Aula Serbaguna</h5>
+                            <small class="text-muted">Cocok untuk acara keluarga maupun kegiatan sekolah.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3" data-aos="fade-up">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <img src="assets/images/amenity_playground.webp" class="card-img-top object-fit-cover" style="height: 180px;" alt="Playground">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold fs-6 text-brand">Playground</h5>
+                            <small class="text-muted">Area bermain anak sederhana non-air.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <img src="assets/images/gazebo.webp" class="card-img-top object-fit-cover" style="height: 180px;" alt="Gazebo">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold fs-6 text-brand">Gazebo Keluarga</h5>
+                            <small class="text-muted">Nyaman untuk bersantai atau menunggu anak berenang.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <img src="assets/images/kamar_bilas.webp" class="card-img-top object-fit-cover" style="height: 180px;" alt="Bilas">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold fs-6 text-brand">Kamar Bilas</h5>
+                            <small class="text-muted">Air bersih dan shower yang melimpah.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <img src="assets/images/toilet.webp" class="card-img-top object-fit-cover" style="height: 180px;" alt="Toilet">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold fs-6 text-brand">Toilet Bersih</h5>
+                            <small class="text-muted">Terpisah pria dan wanita, tersebar di area strategis.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <img src="assets/images/parkir.webp" class="card-img-top object-fit-cover" style="height: 180px;" alt="Parkir">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold fs-6 text-brand">Parkir Luas</h5>
+                            <small class="text-muted">Area parkir aman untuk kendaraan pengunjung.</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="500">
+                     <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <img src="assets/images/villa.webp" class="card-img-top object-fit-cover" style="height: 180px;" alt="Villa">
+                        <div class="card-body text-center">
+                            <h5 class="fw-bold fs-6 text-brand">Villa Penginapan</h5>
+                            <small class="text-muted">Staycation nyaman tepat di samping kolam.</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+            <div class="card border-0 shadow-sm overflow-hidden rounded-4 bg-light-blue" data-aos="fade-up">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6">
+                        <img src="assets/images/amenity_kantin.webp" class="img-fluid w-100 object-fit-cover" style="height: 350px;" alt="Suasana Kantin RSC">
+                    </div>
+                    <div class="col-lg-6 p-4 p-lg-5 text-center text-lg-start">
+                        <h3 class="fw-bold text-brand mb-3"><i class="bi bi-cup-hot-fill me-2"></i>Kantin & Kuliner</h3>
+                        <p class="text-muted fs-5">
+                            Lapar setelah berenang? Tidak perlu khawatir. Kantin RSC menyediakan area makan yang nyaman dengan berbagai pilihan kuliner lezat. Mulai dari makanan berat, mie instan, hingga aneka minuman dingin.
+                        </p>
+                        <button class="btn btn-primary rounded-pill px-4 mt-2" data-bs-toggle="modal" data-bs-target="#modalKantin">
+                            <i class="bi bi-book-half me-2"></i>Lihat Daftar Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sports" class="py-5 bg-sports-blue"> 
+        <div class="container">
+            <h2 class="text-center fw-bold text-white mb-5 display-5" data-aos="fade-up">Fasilitas Non-Kolam</h2>
+
+            <div class="card-sport shadow-sm mb-4" data-aos="fade-up">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6">
+                        <img src="assets/images/mini_soccer.webp" class="img-fluid img-sport-cover" loading="lazy" alt="Mini Soccer">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card-sport-body">
+                            <h3 class="fw-bold mb-3 text-white"><i class="bi bi-trophy me-2"></i>Mini Soccer Field</h3>
+                            <p class="mb-4 text-white-50">Lapangan mini soccer dengan rumput sintetis berkualitas. Ideal untuk turnamen kecil atau sesi latihan rutin tim komunitas Anda. Tersedia pencahayaan malam hari.</p>
+                            <ul class="list-unstyled text-white fs-5">
+                                <li class="mb-2"><i class="bi bi-cash-stack me-2 text-info"></i>Mulai <strong>Rp 250.000</strong> / 2 Jam</li>
+                                <li class="mb-2"><small class="text-white-50">*Harga berbeda tergantung hari & jam</small></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-sport shadow-sm" data-aos="fade-up">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <img src="assets/images/gym.webp" class="img-fluid img-sport-cover" loading="lazy" alt="Gym Fitness">
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="card-sport-body">
+                            <h3 class="fw-bold mb-3 text-white"><i class="bi bi-bicycle me-2"></i>Gym & Fitness</h3>
+                            <p class="mb-4 text-white-50">Area kebugaran modern dengan alat-alat kardio dan beban terbaru.</p>
+                            <ul class="list-unstyled text-white fs-5">
+                                <li class="mb-2"><i class="bi bi-ticket-perforated me-2 text-info"></i>Harian: <strong>Rp 15.000</strong> / visit</li>
+                                <li class="mb-2"><i class="bi bi-star-fill me-2 text-info"></i>Member: <strong>Rp 150.000</strong> / bulan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-sport shadow-sm mb-4" data-aos="fade-up">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6">
+                        <img src="assets/images/villa.webp" class="img-fluid img-sport-cover" loading="lazy" alt="Villa">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card-sport-body">
+                            <h3 class="fw-bold mb-3 text-white"><i class="bi bi-trophy me-2"></i>Villa</h3>
+                            <p class="mb-4 text-white-50">Penginapan nyaman tepat di samping kolam renang, cocok untuk bersantai bersama keluarga dan teman.</p>
+                            <ul class="list-unstyled text-white fs-5">
+                                <li class="mb-2"><i class="bi bi-cash-stack me-2 text-info"></i>Mulai <strong>Rp 350.000</strong> / 6 Jam</li>
+                                <li><i class="bi bi-person-fill"></i> Kapasitas Hingga 10 Orang.</li>
+                                <li class="mb-2"><small class="text-white-50">*Syarat dan ketentuan berlaku jika melebihi kapasitas 10 orang</small></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-sport shadow-sm" data-aos="fade-up">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <img src="assets/images/Archery.webp" class="img-fluid img-sport-cover" loading="lazy" alt="Archery">
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="card-sport-body">
+                            <h3 class="fw-bold mb-3 text-white"><i class="bi bi-bicycle me-2"></i>Archery (Memanah)</h3>
+                            <p class="mb-4 text-white-50">Nikmati pengalaman memanah yang seru dan aman untuk pemula maupun anak-anak. Dipandu oleh instruktur, kegiatan ini dapat melatih fokus, ketenangan, dan kepercayaan diri sambil bersenang-senang.</p>
+                            <ul class="list-unstyled text-white fs-5">
+                                <li class="mb-2"><i class="bi bi-cash-stack me-2 text-info"></i>Harga: <strong>Rp 100.000</strong> /4 kali Pertemuan (Dengan Pelatih)</li>
+                                <li><i class="bi bi-clock"></i> Setiap Minggu Pukul 15.30</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-5 bg-light-blue">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-down">
+                <h2 class="fw-bold text-brand display-5">Galeri Foto</h2>
+                <p class="text-muted">Dokumentasi keseruan pengunjung RSC</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-md-4" data-aos="zoom-in">
+                    <div class="gallery-frame"><img src="assets/images/gallery_1_thumb.webp" loading="lazy" alt="Galeri RSC"></div>
+                </div>
+                <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-frame"><img src="assets/images/gallery_2_thumb.webp" loading="lazy" alt="Galeri RSC"></div>
+                </div>
+                <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-frame"><img src="assets/images/gallery_3_thumb.webp" loading="lazy" alt="Galeri RSC"></div>
+                </div>
+                <div class="col-6 col-md-4" data-aos="zoom-in">
+                    <div class="gallery-frame"><img src="assets/images/pool_child.webp" loading="lazy" alt="Galeri RSC"></div>
+                </div>
+                <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-frame"><img src="assets/images/pool_mid.webp" loading="lazy" alt="Galeri RSC"></div>
+                </div>
+                <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-frame"><img src="assets/images/pool_adult.webp" loading="lazy" alt="Galeri RSC"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instagram" class="py-5 bg-white mb-5 border-top">
+        <div class="container">
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+                    Jangan Ketinggalan Promo dan Event Terbaru!! Les Renang 300rb | Gym 150rb/bln | Info lebih lanjut hubungi Admin. &nbsp;&nbsp;&mdash;&nbsp;&nbsp; Jangan Ketinggalan Promo dan Event Terbaru!! Les Renang 300rb | Gym 150rb/bln | Info lebih lanjut hubungi Admin.
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                 <div class="col-md-8 col-lg-5">
+                    <div class="ratio ratio-1x1 rounded-4 overflow-hidden shadow border" style="max-height: 600px;">
+                        <iframe src="https://www.instagram.com/rsc.swimmingpool/embed" frameborder="0" allowtransparency="true" allowfullscreen="" scrolling="no" style="border:none; width:100%; height: 100%;"></iframe>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="https://www.instagram.com/rsc.swimmingpool" target="_blank" class="btn btn-outline-danger rounded-pill btn-sm">
+                            <i class="bi bi-instagram me-1"></i> Buka di Aplikasi Instagram
+                        </a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <h3 class="text-primary fw-bold mb-4">RSC Swimming Pool</h3>
+                    <p class="mb-3"><i class="bi bi-geo-alt-fill text-danger me-2"></i> 
+                        GG. Sumantadireja. Kp. Ciloajaya 007/003 <br>Desa Cibening, Kec. Bungursari, Kab. Purwakarta.
+                    </p>
+                    <p class="mb-2"><i class="bi bi-whatsapp text-success me-2"></i> 0812-1386-7251</p>
+                    <p class="mb-2"><i class="bi bi-envelope text-warning me-2"></i> rscswimmingpool@gmail.com</p>
+                    
+                    <div class="social-links mt-4">
+                        <a href="https://www.instagram.com/rsc.swimmingpool" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@rsc_swimmingpool?_t=ZS-90c8SAjBynE&_r=1" target="_blank" rel="noopener noreferrer" title="TikTok"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="ratio ratio-21x9 rounded-4 overflow-hidden shadow mb-3">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.7629376509984!2d107.4727405!3d-6.4954557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690dd5ec4e0533%3A0xb36c071287547cde!2sRuly%20Sport%20Center!5e0!3m2!1sid!2sid!4v1765361496372!5m2!1sid!2sid" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <div class="text-end">
+                        <a href="https://maps.app.goo.gl/RCyXoik2Dp8HWxF47" target="_blank" class="btn btn-outline-light rounded-pill btn-sm fw-bold">
+                            <i class="bi bi-map-fill me-2"></i> Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary">
+            <p class="text-center small text-secondary mb-0">© 2025 Ruly Sport Center. All Rights Reserved.</p>
+        </div>
     </footer>
 
-  </body>
-  <script src="assets/js/script.js"></script>
+    <div class="modal fade" id="modalLesRenang" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4 border-0">
+                <div class="modal-header bg-brand text-white">
+                    <h5 class="modal-title fw-bold"><i class="bi bi-person-swimming me-2"></i>Detail Les Renang</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <img src="assets/images/program_les.webp" class="img-fluid rounded-3 w-100" alt="Les Renang">
+                            <div class="alert alert-primary mt-3 text-center">
+                                <h4 class="fw-bold mb-0">Rp 300.000</h4>
+                                <small>/bulan</small>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <h5 class="fw-bold text-brand">Fasilitas Include:</h5>
+                            <ul class="list-unstyled small mb-3">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>4x Pertemuan</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Coach Profesional</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Gratis Tiket Masuk (Siswa & Pengantar)</li>
+                            </ul>
+                            <h5 class="fw-bold text-brand">Jadwal:</h5>
+                            <table class="table table-sm table-striped small">
+                                <tr><td>Selasa 15.00</td><td>Coach Fery</td></tr>
+                                <tr><td>Selasa 15.00</td><td>Coach Dillah (Putri)</td></tr>
+                                <tr><td>Rabu 15.30</td><td>Coach Budi</td></tr>
+                                <tr><td>Kamis 15.00</td><td>Coach Fery</td></tr>
+                                <tr><td>Jumat 15.30</td><td>Coach Budi</td></tr>
+                                <tr><td>Minggu 15.00</td><td>Coach Isma & Fery</td></tr>
+                            </table>
+                            <a href="https://wa.me/6281213867251?text=Saya%20mau%20daftar%20Les%20Renang" target="_blank" class="btn btn-success w-100 rounded-pill"><i class="bi bi-whatsapp me-2"></i>Daftar Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal fade" id="modalHydro" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4 border-0">
+                <div class="modal-header bg-warning text-dark">
+                    <h5 class="modal-title fw-bold"><i class="bi bi-heart-pulse me-2"></i>Detail Hydro Therapy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <img src="assets/images/program_hydro.webp" class="img-fluid rounded-3 w-100" alt="Hydro Therapy">
+                            <div class="alert alert-warning mt-3 text-center">
+                                <h4 class="fw-bold mb-0">Rp 260.000</h4>
+                                <small>/bulan (Member Baru)</small>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <h5 class="fw-bold text-dark">Keunggulan:</h5>
+                            <ul class="list-unstyled small mb-3">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Coach Nety</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Cek Tensi Gratis (Sesi 1)</li>
+                                <li><i class="bi bi-tag-fill text-primary me-2"></i>Promo: Daftar Berdua/2 Bulan cuma <strong>520rb</strong></li>
+                            </ul>
+                            <h5 class="fw-bold text-dark">Jadwal (Coach Nety):</h5>
+                            <ul class="list-unstyled small">
+                                <li class="border-bottom py-1 d-flex justify-content-between"><span>Selasa</span> <span>07.30 WIB</span></li>
+                                <li class="border-bottom py-1 d-flex justify-content-between"><span>Rabu</span> <span>07.30 WIB</span></li>
+                                <li class="border-bottom py-1 d-flex justify-content-between"><span>Kamis</span> <span>07.30 WIB</span></li>
+                                <li class="py-1 d-flex justify-content-between"><span>Sabtu</span> <span>07.00 WIB</span></li>
+                            </ul>
+                            <a href="https://wa.me/6281213867251?text=Saya%20tertarik%20Hydro%20Therapy" target="_blank" class="btn btn-success w-100 rounded-pill"><i class="bi bi-whatsapp me-2"></i>Daftar via WA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalKantin" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4 border-0">
+                <div class="modal-header bg-brand text-white">
+                    <h5 class="modal-title fw-bold"><i class="bi bi-book-half me-2"></i>Daftar Menu Kantin RSC</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="assets/images/menu_kantin.webp" class="img-fluid w-100" alt="Daftar Menu Makanan">
+                </div>
+                <div class="modal-footer justify-content-center bg-light">
+                    <small class="text-muted">Harga dapat berubah sewaktu-waktu.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/6281213867251?text=Halo%20Admin,%20saya%20mau%20pesan%20tiket%20kolam%20renang" class="btn-floating-wa" target="_blank">
+    <i class="bi bi-whatsapp fs-4"></i>
+    <span class="fw-bold d-none d-md-inline">Pesan Tiket</span>
+</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
-
-    <script>
-      gsap.from('.img-thumbnail', { duration: 2, rotationX: 360 });
-      gsap.from('.navbar', { duration: 1.5, opacity: 0, y: '-100%', ease: 'bounce' });
-      gsap.from('.display-4', { delay: 1, duration: 1, opacity: 0, x: '-10%' });
-
-      gsap.registerPlugin(TextPlugin);
-      gsap.to('.lead', { delay: 1.5, duration: 2, text: 'Lecturer | Content Creator' });
-
-      const galleryImages = document.querySelectorAll('.gallery-img');
-      const delayTimes = [0, 50, 100, 150, 200, 250, 300, 350, 400, 450];
-
-      function shuffleArray(array) {
-        for (var i = array.length - 1; i > 0; i--) {
-          var j = Math.floor(Math.random() * (i + 1));
-          var temp = array[i];
-          array[i] = array[j];
-          array[j] = temp;
-        }
-        return array;
-      }
-      const newDelay = shuffleArray(delayTimes);
-      galleryImages.forEach((img, i) => {
-        img.dataset.aos = 'fade-up';
-        img.dataset.aosDelay = i * 50 + '';
-        // img.dataset.aosDelay = newDelay[i];
-      });
-
-      AOS.init({
-        once: true,
-        duration: 3000,
-      });
-    </script>
-    
-    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
-    <script type="text/javascript">
-      VanillaTilt.init(document.querySelectorAll('.keyboard-box'), {
-        max: 35,
-        speed: 1000,
-        glare: true,
-      });
-      </script>
-
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
-
-
-
-
