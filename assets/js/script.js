@@ -111,3 +111,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
+// =========================================
+    // 6. LOGIKA TOMBOL "LIHAT LEBIH BANYAK"
+    // =========================================
+    const loadMoreBtn = document.getElementById('btnLoadMore');
+    
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+            // Ambil semua elemen galeri yang tersembunyi
+            const hiddenItems = document.querySelectorAll('.hidden-gallery');
+            
+            // Tampilkan satu per satu
+            hiddenItems.forEach(item => {
+                item.classList.remove('d-none'); // Hapus class display:none
+                
+                // PENTING: Refresh AOS agar animasi zoom-in tetap jalan saat muncul
+                if (typeof AOS !== 'undefined') {
+                    setTimeout(() => {
+                        AOS.refresh(); 
+                    }, 100);
+                }
+            });
+
+            // Sembunyikan tombol setelah diklik (karena semua foto sudah tampil)
+            this.style.display = 'none';
+        });
+    }
