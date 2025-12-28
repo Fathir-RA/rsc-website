@@ -10,6 +10,12 @@
     --brand-gold: #FFC107;       /* Kuning Marquee */
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden !important; /* Paksa potong sisa kanan */
+    position: relative; /* Kunci posisi */
+}
+
 body {
     font-family: 'Outfit', sans-serif;
     color: #444;
@@ -387,6 +393,11 @@ section {
         border-bottom: none; 
         padding: 10px 0; /* Padding lebih kecil */
     } 
+
+   .container-fluid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     
     .navbar.scrolled {
         background-color: white !important;
@@ -532,3 +543,4 @@ input, textarea, select {
         border-radius: 12px;
     }
 }
+
