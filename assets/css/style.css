@@ -98,7 +98,6 @@ section {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
 }
 
 .hero-caption-centered {
@@ -123,9 +122,32 @@ section {
 .hero-caption-centered h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    text-shadow: 2px 2px 20px rgba(0,0,0,0.8);
     margin-bottom: 20px;
     margin-top: 15px;
+    
+    /* --- KOMBINASI STROKE + SHADOW TEBAL --- */
+    text-shadow: 
+        /* Layer 1-5: Membuat Garis Tepi Hitam Tajam (Stroke) */
+        2px 2px 0 #000, 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        /* Layer 6: Membuat Bayangan Lembut Besar di Belakangnya (Shadow) */
+        4px 4px 10px rgba(0,0,0,5); /* Angka 25px membuat blur-nya jauh */
+}
+
+/* Deskripsi paragraf juga dipertegas bayangannya */
+.hero-caption-centered p {
+    /* Bayangan hitam pekat yang agak nge-blur */
+    text-shadow: 2px 2px 8px rgba(0,0,0,1);
+    font-weight: 700;
+}
+
+/* Agar deskripsi kecil di laptop juga terbaca */
+.hero-caption-centered p {
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: 600; /* Sedikit dipertebal */
 }
 
 /* Tombol Prev/Next Carousel */
@@ -373,82 +395,86 @@ section {
 }
 
 /* =========================================
-   12. MOBILE RESPONSIVE (UPDATE FINAL - LANDSCAPE HERO)
+   12. MOBILE RESPONSIVE (UPDATE FINAL - TEKS LEBIH KECIL)
    ========================================= */
 @media (max-width: 768px) {
     
-    /* --- 1. UBAH HERO JADI LANDSCAPE (MELEBAR) --- */
+    /* --- 1. SETTING GAMBAR LANDSCAPE --- */
     .carousel-item {
-        /* Matikan paksaan tinggi layar penuh */
         height: auto !important; 
         min-height: unset !important;
-
-        /* Atur rasio gambar agar melebar (Landscape) */
-        /* Angka 4/3 membuat gambar terlihat utuh & kotak persegi panjang */
         aspect-ratio: 4 / 3; 
-        
         background-size: cover;
         background-position: center;
     }
 
-    /* --- 2. PENYESUAIAN TEKS DI GAMBAR PENDEK --- */
+    /* --- 2. PENYESUAIAN TEKS HEADER --- */
     .hero-caption-centered {
-        padding: 15px;
-        justify-content: center; /* Teks di tengah */
+        padding: 10px; /* Padding dikurangi biar lega */
+        justify-content: center;
     }
 
-    /* Perkecil Judul agar muat */
+    /* Judul Utama - Sedikit diperkecil lagi */
     .hero-caption-centered h1 { 
-        font-size: 1.6rem !important; 
-        margin-bottom: 5px;
-        text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+        font-size: 1.5rem !important; 
+        margin-bottom: 4px;
+        text-shadow: 
+            2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000,
+            3px 3px 15px rgba(0,0,0,0.9);
     }
     
-    /* Perkecil Badge lokasi */
+    /* Badge */
     .hero-caption-centered .badge {
-         font-size: 0.7rem !important;
-         padding: 0.3em 0.8em !important;
-         margin-bottom: 5px !important;
+         font-size: 0.65rem !important;
+         padding: 0.3em 0.7em !important;
+         margin-bottom: 4px !important;
     }
 
-    /* SEMBUNYIKAN Deskripsi paragraf agar gambar bersih */
-    .hero-caption-centered p.d-none.d-md-block {
-         display: none !important;
+    /* --- 3. PARAGRAF DESKRIPSI (DIPERKECIL) --- */
+    .hero-caption-centered p {
+         display: block !important; 
+         
+         /* UKURAN FONT DIPERKECIL DISINI: */
+         font-size: 0.75rem !important; /* Jadi lebih kecil & halus */
+         
+         margin-bottom: 10px !important; 
+         text-shadow: 1px 1px 4px #000; 
+         font-weight: 600;
+         line-height: 1.2; /* Jarak antar baris lebih rapat */
+         max-width: 95%; 
+         margin-left: auto;
+         margin-right: auto;
     }
 
-    /* --- 3. HILANGKAN TOMBOL PANAH KIRI/KANAN --- */
+    /* --- 4. INDIKATOR (TITIK 3) --- */
+    .carousel-indicators {
+        bottom: 5px !important; 
+        margin-bottom: 0 !important;
+    }
+
+    /* --- 5. HILANGKAN NAVIGASI PANAH --- */
     .carousel-control-prev, 
     .carousel-control-next {
         display: none !important;
     }
 
-    /* --- 4. SETTING NAVBAR TRANSPARAN & COMPACT --- */
+    /* --- 6. NAVBAR & LOGO --- */
     .navbar { 
         background-color: transparent; 
         border-bottom: none; 
         padding: 10px 0; 
     } 
-
     .container-fluid {
         padding-left: 20px;
         padding-right: 20px;
     }
-    
     .navbar.scrolled {
         background-color: white !important;
         border-bottom: 1px solid #ddd;
         padding: 5px 0; 
     }
-
-    /* --- 5. PERKECIL LOGO & MENU --- */
-    .navbar-brand .img-logo {
-        width: 40px; 
-        height: auto;
-    }
-    .navbar-brand .brand-text {
-        font-size: 1.1rem; 
-    }
-
+    .navbar-brand .img-logo { width: 35px; height: auto; } /* Logo diperkecil dikit */
+    .navbar-brand .brand-text { font-size: 1rem; }
     .navbar-collapse {
         background-color: white;
         padding: 15px;
@@ -456,8 +482,6 @@ section {
         border-radius: 10px;
         box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
-
-    /* Atur tinggi galeri di HP */
     .gallery-frame img { height: 200px; }
 }
 
